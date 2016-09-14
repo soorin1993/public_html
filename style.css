@@ -110,7 +110,7 @@ body {
 
  }
  
-#logo-wrapper:hover .logo,
+#logo-wrapper:hover #logo,
 #logo-wrapper:hover{
 	
   fill:red;
