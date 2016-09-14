@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	
+	font-family: 'Indie Flower', cursive;
+	color: #3a3a3a;
+	font-size: 18px;
+	background-color: #cbf2ff;
+	background: repeating-linear-gradient(
+			45deg,
+			#cbf2ff,
+			#cbf2ff 30px,
+			white 30px,
+			white 60px /* determines size */
+	);
+	text-align: center;
+}
+
+ul {
+	
+	list-style: none;
+	
+}
+
+li {
+	
+	margin: 20px 0px 20px 0px;
+	padding: 1px;
+	font-size: 15px;
+		
+}
+
+b {
+	color: #ff7c7c;
+}
+
+.body-wrapper {
+	
+	width: 80%;
+	background-color: white;
+	display: block;
+	margin: 0 auto;
+	min-height: 100vh;
+	height: auto;
+	border-left: 1px solid #8f8f8f;
+	border-right: 1px solid #8f8f8f;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.bash_label {
+		
+	font-family: 'Amatic SC', cursive;
+	display: inline-block;
+	float: center;
+	text-align: center;
+	text-decoration: none;
+	color: #5a5a5a;
+	font-size: 40px;
+	margin: 50px 30px 0px 30px;
+	
+	
+}
+
+.git_label {
+		
+	font-family: 'Amatic SC', cursive;
+	display: inline-block;
+	float: center;
+	text-align: center;
+	text-decoration: none;
+	color: #5a5a5a;
+	font-size: 40px;
+	margin: 50px 30px 0px 30px;
+
+	
+}
+
+.github_label {
+		
+	font-family: 'Amatic SC', cursive;
+	display: inline-block;
+	float: center;
+	text-align: center;
+	text-decoration: none;
+	color: #5a5a5a;
+	font-size: 40px;
+	margin: 50px 30px 0px 30px;
+}
+
+hr {
+	
+	margin: 10px auto;
+	width: 450px;
+	background-color: #5a5a5a;		
+	display: block;
+	border: none;
+	height: 1px;
+	
+}
+
+.letter {
+	margin: 30px auto;
+	display: block;	
+}
+
+.letter-container {
+	
+	background-color: black;
+
+}
+
+.letter path {
+
+	fill: #5a5a5a;
+		
+}
+
+
+
+.loveletter {
+	
+	font-family: 'Amatic SC', cursive;
+	font-size: 100px;
+	margin: 20px auto;	
+	color: #5a5a5a;
+
+	
+
+}
+
+.bash {
+	
+	display: none;
+	vertical-align: middle;
+	width: 50%;
+	margin: 40px auto;	
+	border: 1px solid black;
+	padding: 20px;
+	background: repeating-linear-gradient(
+			135deg,
+			rgba(203, 242, 255, .8),
+			rgba(203, 242, 255, .8) 10px,
+			white 10px,
+			white 20px /* determines size */
+	);
+}
+
+.git {
+	
+	margin: 40px auto;	
+	width: 50%;
+	display: none;
+		vertical-align: middle;
+
+	border: 1px solid black;
+	padding: 20px;
+	background: repeating-linear-gradient(
+			135deg,
+			rgba(203, 242, 255, .8),
+			rgba(203, 242, 255, .8) 10px,
+			white 10px,
+			white 20px /* determines size */
+	);
+}
+
+.github {
+	
+	margin: 40px auto;	
+	width: 50%;
+	display: none;
+		vertical-align: middle;
+
+	border: 1px solid black;
+	padding: 20px;
+	background: repeating-linear-gradient(
+			135deg,
+			rgba(203, 242, 255, .8),
+			rgba(203, 242, 255, .8) 10px,
+			white 10px,
+			white 20px /* determines size */
+	);
+}
+
+.body-container {
+	
+	display: inline-block;
+	
+}
+
+.bash-sop1, .git-sop1, .github-sop1 {
+	
+	display: none;
+	vertical-align: middle;
+	width: 20%;
+	margin-right: 20px;
+
+
+	
+	
+}
+
+.bash-sop2, .git-sop2, .github-sop2 {
+	
+	display: none;
+	vertical-align: middle;
+	width: 20%;	
+	margin-left: 20px;
+
+}
+
+.type-container {
+	
+	display: none;
+	background-color: #352f2c;
+	width: 50%;
+	padding: 10px;
+	margin-bottom: 50px;
+	
+}
+
+.type-content {
+	
+	display: none;
+}
+
+.type {
+	
+	text-align: left;
+	vertical-align: middle;
+	float: left;
+	color: white;
+	font-family: 'Inconsolata', monospace;
+}
+
+
+.typed-cursor{
+	
+	font-family: 'Inconsolata', monospace;
+	text-align: left;
+	float: left;
+	color: grey;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+footer {
+	
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+.home_button {
+	
+	position: relative;
+	fill: rgba(203, 242, 255, .8);
+	stroke:  #3a3a3a;
+	stroke-width: 7px;
+	display: inline-block;
+	float: center;
+	text-align: center;
+	margin: 50px 30px 0px 30px;
+	bottom: -15px;
+}
+
+
+
