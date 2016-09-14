@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 	<head>
 		<title>soorin park | creative mind in process</title>
 		
@@ -10,7 +10,11 @@
 		
 		<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 		
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 
 			
 		<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
@@ -23,16 +27,14 @@
 				
 	</head>
 	
-	<body="main">
-		
+	<body>
 		<div class="header">
-			
 			<!--LOGO-->
 			<a href="index.html">
-			<div class="logo-wrapper">
-				<svg class="logo-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353.000000 196.000000" preserveAspectRatio="xMidYMid meet">
+			<div id="logo-wrapper">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353.000000 196.000000" preserveAspectRatio="xMidYMid meet">
 					<g transform="translate(0.000000,196.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-						<path class="logo" d="M493 1865 c-216 -58 -346 -237 -345 -475 0 -141 44 -249 141 -353 58
+						<path id="logo" d="M493 1865 c-216 -58 -346 -237 -345 -475 0 -141 44 -249 141 -353 58
 								-63 108 -91 203 -116 71 -19 106 -21 394 -21 l316 0 -4 -197 c-3 -192 -4 -200
 								-30 -253 -55 -112 -186 -209 -329 -244 -88 -22 -238 -22 -309 0 -116 34 -240
 								136 -293 240 -14 28 -31 79 -37 115 -7 35 -14 69 -16 75 -1 7 -21 11 -51 10
@@ -54,45 +56,46 @@
 			</div>
 			</a>
 			
-			<nav class="top-nav">
+			<nav id="top-nav">
 				<ul> 
-					<li><a href="#contact">contact</li>
-					<li><a href="school">school</li>
+					<li><a href="#contact">contact</a></li>
+					<li><a href="school">school</a></li>
 					<li><a href="#world-map">travel</a></li>
-					<li><a href="#software">software</li>
-					<li><a href="#design">art/design</li>
+					<li><a href="#software">software</a></li>
+					<li><a href="#design">art/design</a></li>
 					<li><a href="#about-wrapper">about</a></li>
-
+	
 				</ul>
 			</nav>
 		
-		</div>
+		</div><!-- end header -->
+	
 		
-		<div class="slider">
-			
-			<div><img src="img/slideshow/ss_1.jpg"></div>
-			<div><img src="img/slideshow/ss_2.jpg"></div>
-			<div><img src="img/slideshow/ss_3.jpg"></div>
-			<div><img src="img/slideshow/ss_4.jpg"></div>
-			<div><img src="img/slideshow/ss_5.jpg"></div>
-			
-		</div>
+		<div id="main">
+					
+			<div class="slider" id="slider1">
 				
-		<div class="main">
-			
-			<div id="about-wrapper">
-
-				<div class="or-spacer1">
+				<div><img src="img/slideshow/ss_1.jpg" alt="img1"></div>
+				<div><img src="img/slideshow/ss_2.jpg" alt="img2"></div>
+				<div><img src="img/slideshow/ss_3.jpg" alt="img3"></div>
+				<div><img src="img/slideshow/ss_4.jpg" alt="img4"></div>
+				<div><img src="img/slideshow/ss_5.jpg" alt="img5"></div>
+				
+			</div>
+									
+			<div class="or-spacer" id="spacer1">
 					<div class="mask"></div>
-				</div>
+			</div>
 				
-				<h1 class="about-title">
+			<div class="content-wrapper" id="about-wrapper">
+					
+				<h1 class="title" id="about-title">
 					about me
 				</h1>
 				
-				<div class="about-wrapper-inside">
+				<div id="about-wrapper-inside">
 					<div id="about">
-							
+								
 						<p>Hello there! Welcome to my website. Just in case you don't know who I am, my name is Soo Park, and I'm a software/electrical engineer located in Boulder, Colorado. My focus and interests are mostly in the software development realm specializing in user interface development.</p>
 						<br>
 						<p>I was born and raised in Seoul, S.Korea and hailed to the beautiful state of Colorado in middle school. I graduated from University of Colorado, Boulder with a B.S. in Electrical and Computer Engineering degree with a focus in software and semiconductor technology as well as a minor in Technology, Arts and Media. I'm currently back in school to complete a minor in Computer Science.</p>
@@ -103,84 +106,83 @@
 
 					</div>
 
-					<img id="me-pic" src="img/me.jpg">	
-
+					<img id="me-pic" src="img/me.jpg" alt="selfie">	
 				</div>
 				
-				<div class="or-spacer2">
+				<div class="or-spacer" id="spacer2">
+					<div class="mask"></div>
+				</div>
+					
+				<div class="content-wrapper" id="design-wrapper">
+					<div id="design">
+						
+						<h1 class="title" id="design-title">
+							art/design
+						</h1>
+						
+						<div class="slider" id="slider2">
+					
+							<div><img src="img/slideshow/ss_1.jpg" alt="img1"></div>
+							<div><img src="img/slideshow/ss_2.jpg" alt="img2"></div>
+							<div><img src="img/slideshow/ss_3.jpg" alt="img3"></div>
+							<div><img src="img/slideshow/ss_4.jpg" alt="img4"></div>
+							<div><img src="img/slideshow/ss_5.jpg" alt="img5"></div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="or-spacer" id="spacer3">
+					<div class="mask"></div>
+				</div>
+				
+				<div class="content-wrapper" id="software-wrapper">
+					<div id="software">
+						
+						<h1 class="title" id="software-title">
+							software
+						</h1>
+						
+						<div class="slider" id="slider3">
+					
+							<div><a href="https://github.com/soorin1993/3DVisualization"><img src="img/softwareImgs/3DViz.png" alt="3dviz"></a></div>
+							<div><a href="https://github.com/soorin1993/KIMC"><img src="img/softwareImgs/capstone.jpg" alt="capstone"></a></div>
+							<div><a href="https://github.com/soorin1993/hydroponicApp"><img src="img/softwareImgs/hydroponics.png" alt="hydro"></a></div>
+							<div><a href="https://sea.ucar.edu/event/development-python-gui-interface-yaml-configuration-file-propagation-largely-identical"><img src="img/softwareImgs/ncar.png" alt="sea"></a></div>
+							<div><a href="http://creative.colorado.edu/~sopa7126/school/advancedWeb/dev/sop/"><img src="img/softwareImgs/sop.png" alt="sop"></a></div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="or-spacer" id="spacer4">
+					<div class="mask"></div>
+				</div>
+							
+				<div class="content-wrapper" id="world-map-wrapper">
+					<div id="world-map">
+						<h1 class="title" id="world-map-title">
+							travel
+						</h1>
+					</div>
+					</div>
+				<div class="or-spacer" id="spacer5">
 					<div class="mask"></div>
 				</div>
 			
-			</div>
-			<div id="design-wrapper">
-				<div id="design">
-					
-					<h1 id="design-title">
-						art/design
-					</h1>
-					
-					<div class="slider1">
+			
+				<footer>
+					<p> Created by Soo Park. 2016. All rights reserved. Pictures and Art works can be used under the CCA 3.0</p>
+					<div id="counter"><a href='http://www.counter12.com'><img src='http://www.counter12.com/img-6x0AYYcZ-8.gif' alt='counter'></a><script type='text/javascript' src='http://www.counter12.com/ad.js?id=6x0AYYcZ'></script></div>
+				</footer>
 				
-						<div><img src="img/slideshow/ss_1.jpg"></div>
-						<div><img src="img/slideshow/ss_2.jpg"></div>
-						<div><img src="img/slideshow/ss_3.jpg"></div>
-						<div><img src="img/slideshow/ss_4.jpg"></div>
-						<div><img src="img/slideshow/ss_5.jpg"></div>
-						
-					</div>
-				</div>
 			</div>
 			
-			<div class="or-spacer3">
-				<div class="mask"></div>
-			</div>
 			
-			<div id="software-wrapper">
-				<div id="software">
-					
-					<h1 id="software-title">
-						software
-					</h1>
-					
-					<div class="slider2">
-				
-						<div><a href="https://github.com/soorin1993/3DVisualization"><img src="img/softwareImgs/3DViz.png"></a></div>
-						<div><a href="https://github.com/soorin1993/KIMC"><img src="img/softwareImgs/capstone.jpg"></a></div>
-						<div><a href="https://github.com/soorin1993/hydroponicApp"><img src="img/softwareImgs/hydroponics.png"></a></div>
-						<div><a href="https://sea.ucar.edu/event/development-python-gui-interface-yaml-configuration-file-propagation-largely-identical"><img src="img/softwareImgs/ncar.png"></a></div>
-						<div><a href="http://creative.colorado.edu/~sopa7126/school/advancedWeb/dev/sop/"><img src="img/softwareImgs/sop.png"></a></div>
-						
-					</div>
-				</div>
-			</div>
-			
-			<div class="or-spacer4">
-				<div class="mask"></div>
-			</div>
-						
-			<div id="world-map-wrapper">
-				<div id="world-map">
-					<h1 id="world-map-title">
-						travel
-					</h1>
-				</div>
-				</div>
-			<div class="or-spacer5">
-				<div class="mask"></div>
-			</div>
-		
-		
-			<footer>
-				<p> Created by Soo Park. 2016. All rights reserved. Pictures and Art works can be used under the CCA 3.0</p>
-			</footer>
-			
+			<script type="text/javascript" src="js/slick/slick.min.js"></script>
+			<script type="text/javascript" src="js/slick.js"></script>
+	
 		</div>
-		
-		
-		<script type="text/javascript" src="js/slick/slick.min.js"></script>
-		<script type="text/javascript" src="js/slick.js"></script>
-
-
 	</body>
 	
 </html>

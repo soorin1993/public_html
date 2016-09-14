@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('.slider').slick({
+	$('#slider1').slick({
 		
 		accessibility: true,
 		autoplay: true,
@@ -9,9 +9,10 @@ $(document).ready(function(){
 		
 	});
 
-	$('.slider1').slick({
+	$('#slider2').slick({
 		centerMode: true,
-		centerPadding: '60px',
+		variableWidth: true,
+		centerPadding: '200px',
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2000,
@@ -19,7 +20,7 @@ $(document).ready(function(){
 		
 	});
 	
-	$('.slider2').slick({
+	$('#slider3').slick({
 		
 		centerMode: true,
 		variableWidth: true,
