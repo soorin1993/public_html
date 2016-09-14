@@ -15,7 +15,7 @@ body {
 .title {
 	
 	display: block;
-	margin: 30px auto;	
+	margin-bottom: 30px;	
 	font-family: 'Raleway', sans-serif;
 	color: red;
 	font-size: 60px;
@@ -37,7 +37,9 @@ body {
 /* or spacer */
 .or-spacer {
 	
-	width: 100%;
+	width: auto;
+	margin-left: -50px;
+	margin-right: -50px;
 
 
 }
@@ -225,8 +227,9 @@ body {
 #world-map {
 	
 	width: 80%;
-	height: 500px;
-	margin: 50px auto;
+	height: 400px;
+	margin: 0px auto 100px auto;
+
 	
 }
 

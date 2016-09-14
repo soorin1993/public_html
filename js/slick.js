@@ -17,6 +17,7 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2000,
 		slidesToShow: 3,
+		dots: true
 		
 	});
 	
@@ -28,7 +29,9 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2000,
-		slidesToShow: 3
+		slidesToShow: 3,
+		dots: true,
+
 		
 	});
 
