@@ -80,6 +80,15 @@ body {
 	background-color: rgba(28, 28, 28, .9);
 	overflow: hidden;  	
 }
+
+.icon li {
+	width: 50px !important;
+}
+
+.icon img{
+	width: 25px;
+	vertical-align: middle;
+}
  
 #logo-wrapper {
 	position: relative;
