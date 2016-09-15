@@ -1,6 +1,9 @@
 $(function(){
+	var colorIn = "#fb2d2d";
 	$('#world-map').vectorMap({
+    backgroundColor: "#CFCFCF",
     map: 'world_mill',
+    zoomButtons : false,
     focusOn: {
       x: 0,
       y: 0,
@@ -9,25 +12,28 @@ $(function(){
     series: {
       regions: [{
         values: {
-            US:'#FF0000',
-            KR: '#FF0000',
-            CN: '#FF0000',
-            NZ: '#FF0000',
-            AU: '#FF0000',
-            PH: '#FF0000',
-            AT: '#FF0000',
-            CZ: '#FF0000',
-            DE: '#FF0000',
-            GB: '#FF0000',
-            HU: '#FF0000',
-            ES: '#FF0000',
-            KH: '#FF0000',
-            FR: '#FF0000',
-            IT: '#FF0000',
-            CH: '#FF0000'
+            US: colorIn,
+            KR: colorIn,
+            CN: colorIn,
+            NZ: colorIn,
+            AU: colorIn,
+            PH: colorIn,
+            AT: colorIn,
+            CZ: colorIn,
+            DE: colorIn,
+            GB: colorIn,
+            HU: colorIn,
+            ES: colorIn,
+            KH: colorIn,
+            FR: colorIn,
+            IT: colorIn,
+            CH: colorIn
             
         }
       }]
+    },
+    onRegionTipShow: function(e, el){
+      	el.html(el.html());
     }
 });
 });

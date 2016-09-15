@@ -140,6 +140,12 @@ body {
 	background-color: #fb2d2d;
 }
 
+#slider1 {
+	
+	margin-top: 50px;
+	
+}
+
 #slider1 img {
 	max-height: 500px;
 }
@@ -184,9 +190,14 @@ body {
 
 #world-map {
 	width: 80%;
-	height: 400px;
+	height: 500px;
 	margin: 0px auto 100px auto;
 }
+
+.jvectormap-container {
+    background-color: white;
+}
+
 
 #contact {
 	font-size: 12px;
