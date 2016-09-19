@@ -67,6 +67,7 @@ body {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
  
@@ -148,6 +149,9 @@ body {
 
 #slider1 img {
 	max-height: 500px;
+	max-width: 1000px;
+
+
 }
 
 #main {
