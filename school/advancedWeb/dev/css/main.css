@@ -40,11 +40,11 @@ html {
 
 .line {
     display: block;
-    height: 2px;
+    height: 1px;
     border: none;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #c5c5c5;
 }
 
 /*
@@ -99,6 +99,7 @@ body {
 	
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
+	color: #474747;
 }
 
 @media screen and (min-width: 650px) {
@@ -112,21 +113,21 @@ body {
 	    overflow: hidden;
 	    white-space: nowrap;
 	    width: 100%;
+	    /*
 		background: repeating-linear-gradient(
 			45deg,
 			black,
 			black 30px,
 			white 30px,
-			white 60px /* determines size */
-		);
+			white 60px
+		); */
 
 	}
 	
 	.title h1 {
 		
 		font-size: 60px;
-		color: red;
-		mix-blend-mode: difference;
+		color: #3F547F;
 		font-family: 'Miriam Libre', sans-serif;
 		margin: 0;
 
@@ -136,6 +137,7 @@ body {
 	.items-containter {
 		
 		display: block;
+		background-color: #F68735;
 	}
 	
 	.items {
@@ -149,10 +151,10 @@ body {
 	.items a {
 		
 		text-decoration: none;
-		color: black;
+		color: white;
 		/*-webkit-text-stroke: 1px aqua;*/
 		display: inline-block;
-		margin: 30px 20px;
+		margin: 20px 20px;
 
 
 		
@@ -163,6 +165,7 @@ body {
 		color: aqua;
 		
 	}
+	
 	
 	.about-container {
 
@@ -185,8 +188,16 @@ body {
 
 	.lab-container {
 		
-		background-color: white;
+		background-color: #DDDDDD;
 		display: block;
+		/*
+		background: repeating-linear-gradient(
+			45deg,
+			black,
+			black 30px,
+			white 30px,
+			white 60px
+		);*/
 		
 	}
 	
@@ -200,13 +211,13 @@ body {
 	
 	.lab ul {
 		
-		
 		list-style: none;
 		text-align: center;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		padding-left: 0;
 		padding-right: 0;
+		margin: 0;
 		
 	}
 	
@@ -214,6 +225,7 @@ body {
 		
 		display: inline-block;
 		margin: 20px;
+		border: solid #3F547F 1px;
 		
 		
 	}
