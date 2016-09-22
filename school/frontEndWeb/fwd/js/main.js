@@ -11,6 +11,8 @@ var os;
 var line1;
 var line2;
 
+var lab7Done = false;
+
 lab1_2.onclick = function() {
 
 	textColor = prompt("What text color? Choose from major color names.");
@@ -76,7 +78,16 @@ lab3_5.onclick = function() {
 			h2s[i].style.color = "black";
 			image[i].src = "img/dog.jpg"
 		}
+		
+		alert(lab7Done)
+		if (lab7Done == true) {
+		
+		image[4].src = "img/konami.jpg"
+		
 	}
+	
+	}
+	
 	
 }
 
@@ -96,6 +107,20 @@ lab4.onclick = function() {
 	var h3 = document.getElementById("wall");
 	h3.style.display = "block";
 
+	
+}
+
+lab7.onmouseover = function() {
+	
+	alert("Waiting for secret code... (hint: Konami)");
+	cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+		alert('Konami!');
+		lab7Done = true
+		
+		var someimage = document.getElementById('lab7');
+		var myimg = someimage.getElementsByTagName('img')[0];
+		myimg.src = "img/konami.jpg"
+	});
 	
 }
 
