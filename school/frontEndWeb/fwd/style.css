@@ -54,7 +54,22 @@ body {
 		display: none;
 	}
 
+
+	.proj-container {
+		
+		width: 70vw;
+		display: block;
+		margin: 5vw auto;
+		text-align: center;
+		
+	}
 	
+	.proj h1 {
+		
+		font-size: 5vw;
+		margin: 2vw auto;
+		
+	}
 	
 	.lab-container {
 		
@@ -148,6 +163,22 @@ body {
 		height: 1.3px;
 		
 	}
+	
+	.proj-container {
+		
+		width: 500px;
+		display: block;
+		margin: 50px auto;
+		text-align: center;
+		
+	}
+	
+	.proj h1 {
+		
+		display: inline-block;
+		margin: 0 20px;
+		font-size: 25px
+	}
 		
 	.lab-container {
 		
@@ -238,6 +269,22 @@ body {
 		display: block;
 		border: none;
 		height: 2px;
+		
+	}
+	
+	.proj-container {
+		
+		width: 700px;
+		display: block;
+		margin: 100px auto;
+		text-align: center;
+		
+	}
+	
+	.proj h1 {
+		
+		display: inline-block;
+		margin: 0 30px;
 		
 	}
 	
