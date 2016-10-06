@@ -60,9 +60,11 @@ lab3_5.onclick = function() {
 	var image = document.getElementsByClassName("placeImg");
 	var h2s = document.getElementsByTagName("h2");
 	var picture = prompt("Are you a cat person or a dog person?");
+	
 		
 	for (i = 0; i < image.length; i++) {
 		if (picture == "cat") {
+			
 			h2s[i].style.color = "black";
 			image[i].src = "img/cat.jpg";
 		}
@@ -74,7 +76,7 @@ lab3_5.onclick = function() {
 		}
 		
 		else {
-
+			
 			h2s[i].style.color = "black";
 			image[i].src = "img/dog.jpg"
 		}
@@ -121,6 +123,23 @@ lab7.onmouseover = function() {
 		var myimg = someimage.getElementsByTagName('img')[0];
 		myimg.src = "img/konami.jpg"
 	});
+	
+}
+
+lab9.onclick = function() {
+		
+	var popup = document.getElementById("popup");
+	var submit = document.getElementById("submit");
+	
+	var close = document.getElementById("close");
+	close.onclick = function() {
+		
+		popup.style.display = "none;"
+	}
+	
+	popup.style.display = "block";
+	
+	
 	
 }
 
