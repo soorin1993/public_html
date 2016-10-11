@@ -168,16 +168,17 @@ textarea {
 }
 
 #map {
-	width: 70%;
+	width: 50%;
 	float: left;
 	
 }
 
 #map img {
+	
 	width: 100%;
-	height: 100%;
 	z-index: 1;
-}
+  
+  }
 
 .location {
 	
@@ -191,67 +192,81 @@ textarea {
 
 #pahrump {
 	
-	top: 42vw;
-	left: 16vw;
+	top: 32vw;
+	left: 11vw;
 
 }
 
-#kimberly {
+#kimberley {
 
-	top: 29vw;
-	left: 28vw;
+	top: 23vw;
+	left: 20vw;
 }
 
+	
 #cooperstown {
 
-	top: 22vw;
-	left: 35vw;
+	top: 18vw;
+	left: 24vw;
 }
 
 #darwin {
-	top: 14vw;
-	left: 40vw;
+	top: 13vw;
+	left: 29vw;
 }
 
 #yellowknife {
-	top: 5vw;
-	left: 52vw;
+	top: 6vw;
+	left: 37vw;
 }
 
-#gale {
-	top: 5vw;
-	left: 47vw;
+#bradbury {
+	top: 6vw;
+	left: 33vw;
 }
+
 
 #info-container {
 	
-	width: 30%;
+	width: 50%;
 	height 100%;
 	float: left;
-	background-color: grey
+	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #3b3b3b;
+	font-size: 15px;
+	text-align: center;
+		
+}
+
+#info-text-place {
+	
+	margin: 50px 20px 20px 4px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #3b3b3b;
+	font-size: 20px;
 	
 }
 
-#img-container {
-	width: 100%;
-	height: 100%;
+#info-text {
+	
+	margin: 30px 10px;
+	
+}
+
+#rover-img {
+	width: 45%;
+	margin-bottom: 30px;
 
 }
 
 footer {
 	clear: both;
-	
+	background-color: #282828;
+	color: #cbcbcb;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
