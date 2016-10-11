@@ -32,7 +32,8 @@ function processRequest(e) {
         var response = JSON.parse(xhr.responseText);
         //console.log(response.photos);
 		photoURL = response.photos[1].img_src;
-		console.log(photoURL);
+		
+		console.log(JSON.stringify(photoURL));
     
     }
     
