@@ -7,26 +7,31 @@ var gale = document.getElementById("gale")
 var apikey = "vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR"
 
 var roverimg = document.getElementById("rover-img")
+var xhr = new XMLHttpRequest();
+
 
 pahrump.onclick = function() {
 	
 	url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&page=1&api_key="
 	
-	jsonURL = url.concat(apikey);
-	
+	jsonURL = url.concat(apikey);	
 	httpGet(jsonURL);
-	var json = JSON.parse(Get(jsonURL));
-	console.log(json);
-	
+
 }
 
-function httpGet(url)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
+function httpGet(url){
+    xhr.open('GET', url, true);
+    xhr.send();
+    
+    xhr.addEventListener("readystatechange", processRequest, false);
+
 }
 
+function processRequest(e) {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        var response = JSON.parse(xhr.responseText);
+        alert(response.photos);
+    }
+}
 
 
