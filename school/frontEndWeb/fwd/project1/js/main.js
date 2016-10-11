@@ -12,8 +12,11 @@ var xhr = new XMLHttpRequest();
 
 pahrump.onclick = function() {
 	
-	url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&page=1&api_key="
+	var sol = "653"
 	
+	url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + sol + "&camera=fhaz&page=1&api_key=" + apikey
+	
+	//url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&page=1&api_key="
 	jsonURL = url.concat(apikey);	
 	httpGet(jsonURL);
 
@@ -22,7 +25,6 @@ pahrump.onclick = function() {
 function httpGet(url){
     xhr.open('GET', url, true);
     xhr.send();
-    
     xhr.addEventListener("readystatechange", processRequest, false);
 
 }
@@ -30,11 +32,9 @@ function httpGet(url){
 function processRequest(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
-        //console.log(response.photos);
 		photoURL = response.photos[1].img_src;
-		
-		console.log(JSON.stringify(photoURL));
-    
+		//console.log(JSON.stringify(photoURL));
+		JSON.stringify(photoURL)
     }
     
 }
