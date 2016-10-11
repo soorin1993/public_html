@@ -26,6 +26,11 @@ var rightArrow = document.getElementById("right-arrow");
 var jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&camera=fhaz&page=1&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR"
 getRequest(jsonURL)
 
+function lpad(value, padding) {
+    var zeroes = new Array(padding+1).join("0");
+    return (zeroes + value).slice(-padding);
+}
+
 leftArrow.onclick = function() {
 	
 	if (currentSol == 0) {
@@ -34,8 +39,11 @@ leftArrow.onclick = function() {
 		
 	}
 	else {
-		currentSol -= 1
-		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + String(currentSol) + "&camera=fhaz&page=1&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
+		currentSol -= 1;
+		formatSol = lpad(currentSol, 3);
+		console.log(formatSol);
+
+		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + formatSol + "&camera=fhaz&page=1&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
 		getRequest(jsonURL);
 
 		
@@ -51,9 +59,13 @@ rightArrow.onclick = function() {
 		
 	}
 	else {
-		currentSol += 1
-		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + String(currentSol) + "&camera=fhaz&page=1&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
+		currentSol += 1;
+		formatSol = lpad(currentSol, 3);
+		alert(formatSol);
+		console.log(formatSol);
+		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + formatSol + "&camera=fhaz&page=1&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
 		getRequest(jsonURL);
+
 
 
 		
@@ -135,16 +147,26 @@ function changeData(e) {
         var response = JSON.parse(xhr.responseText);
 		
 		photoURL = response.photos[0].img_src;
-		id.innerHTML = response.photos[0].id
-		sol.innerHTML = response.photos[0].sol
-		camera.innerHTML = response.photos[0].camera.full_name
-		earth.innerHTML = response.photos[0].earth_date
+		id.innerHTML = response.photos[0].id;
+		sol.innerHTML = response.photos[0].sol;
+		camera.innerHTML = response.photos[0].camera.full_name;
+		earth.innerHTML = response.photos[0].earth_date;
 		
 		roverimg.src = photoURL;
-		roverimg.style.marginTop = "0px"
+		roverimg.style.marginTop = "0px";
 		siteInfo.innerHTML = info;
 
 		
+    }
+    else if (xhr.status == 400) {
+	    
+	    var message = String(currentSol + 1) + "sol image is missing. Skip to the next sol?";
+	    alert(message);   
+		currentSol += 1;
+		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + String(currentSol) + "&camera=fhaz&page=1&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
+		getRequest(jsonURL);
+		    
+	    
     }
     
 }
