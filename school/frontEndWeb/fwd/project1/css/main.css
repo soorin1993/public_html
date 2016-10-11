@@ -95,179 +95,245 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#curiosity-cover-container {
-	
-	width: 100%;
-	background-image: url("../img/space-bg.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
 
-	
-}
-
-#curiosity-cover img {
-	
-	width: 100%;
-	max-width: 1300px;
-	
-	max-height: 700px;
-	
-	display: block;
-	margin: 0 auto;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	#curiosity-cover-container {
 		
-}
-
-#about-curiosity-container {
+		width: 100%;
+		background-image: url("../img/space-bg.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
 	
-	width: 100%;
-	background-color: #451804;
-	display: block;
-
-	
-}
-
-#about-curiosity {
-	
-	width: 70%;
-	max-width: 700px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin: 0 auto;
-	
-}
-
-#about-curiosity p {
-	
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	color: #f0e7e7;
-	font-size: 15px;
-	text-align: center;
-	margin-top: 20px;
-	margin-botton: 20px;
-	padding: 0;
-
-}
-
-#display-container {
-	
-	width: 100%;
-	
-}
-
-#display {
-	overflow: hidden;
-	position: relative;	
-	display: flex;
-	flex-flow: row column;
-
-}
-
-#map {
-	width: 50%;
-	float: left;
-	
-}
-
-#map img {
-	
-	width: 100%;
-	z-index: 1;
-  
-  }
-
-.location {
-	
-	position: absolute;
-	z-index: 2;
-	width: 3vw;
-	height: 3vw;
-	background-color: rgba(255, 255, 255, .5);
-
-}
-
-#pahrump {
-	
-	top: 32vw;
-	left: 11vw;
-
-}
-
-#kimberley {
-
-	top: 23vw;
-	left: 20vw;
-}
-
-	
-#cooperstown {
-
-	top: 18vw;
-	left: 24vw;
-}
-
-#darwin {
-	top: 13vw;
-	left: 29vw;
-}
-
-#yellowknife {
-	top: 6vw;
-	left: 37vw;
-}
-
-#bradbury {
-	top: 6vw;
-	left: 33vw;
-}
-
-
-#info-container {
-	
-	width: 50%;
-	height 100%;
-	float: left;
-	
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	color: #3b3b3b;
-	font-size: 15px;
-	text-align: center;
 		
-}
-
-#info-text-place {
+	}
 	
-	margin: 50px 20px 20px 4px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	color: #3b3b3b;
-	font-size: 20px;
+	#curiosity-cover img {
+		
+		width: 100%;
+		max-width: 1300px;
+		max-height: 700px;
+		display: block;
+		margin: 0 auto;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+			
+	}
 	
-}
-
-#info-text {
+	#about-curiosity-container {
+		
+		width: 100%;
+		background-color: #451804;
+		display: block;
 	
-	margin: 30px 10px;
+		
+	}
 	
+	#about-curiosity {
+		
+		width: 70%;
+		max-width: 700px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0 auto;
+		
+	}
+	
+	#about-curiosity p {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 20px;
+		margin-botton: 20px;
+		padding: 0;
+	
+	}
+	
+	#display-container {
+		
+		width: 100%;
+		padding: 0;
+		margin: 0;
+				background-color: #f0e7e7;
+
+		
+	}
+	
+	#display {
+		
+		overflow: hidden;
+		position: relative;	
+		display: flex;
+		align-items: center;
+		flex-flow: row column;
+	
+	}
+	
+	#map {
+		width: 60%;
+		float: left;
+		
+	}
+	
+	#map img {
+		
+		width: 100%;
+		max-width: 100%;
+		z-index: 1;
+	  
+	  }
+	
+	.location {
+		
+		position: absolute;
+		z-index: 2;
+		width: 3vw;
+		height: 3vw;
+		background-color: rgba(255, 255, 255, .5);
+		cursor: pointer;
+		
+	}
+	
+	#pahrump {
+		
+		top: 32vw;
+		left: 11vw;
+	
+	}
+	
+	#kimberley {
+	
+		top: 23vw;
+		left: 20vw;
+	}
+	
+		
+	#cooperstown {
+	
+		top: 18vw;
+		left: 24vw;
+	}
+	
+	#darwin {
+		top: 13vw;
+		left: 29vw;
+	}
+	
+	#yellowknife {
+		top: 6vw;
+		left: 37vw;
+	}
+	
+	#bradbury {
+		top: 6vw;
+		left: 33vw;
+	}
+	
+	
+	#info-container {
+		
+		width: 40%;
+		float: left;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #3b3b3b;
+		font-size: 15px;
+		text-align: center;
+			
+	}
+	
+	#info-text-place {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #3b3b3b;
+		font-size: 15px;
+		padding: 20px;
+		
+	}
+	
+	#info-text {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #3b3b3b;
+		font-size: 15px;
+		padding: 20px;
+		
+	}
+	
+	#rover-container {
+		
+		width: 100%;
+		height: 500px;
+		background-color: #c1440e;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox */
+		box-sizing: border-box;
+		
+	}
+	
+	#rover-img-container {
+		
+		width: 45%;
+		
+	}
+	
+	#rover-img {
+		
+		width: 100%;
+	
+	}
+	
+
+	#rover-info-container {
+		
+		width: 35%;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 5%;
+		
+	}
+
+	.arrow-container {
+		
+		margin-right: 20px;
+		margin-left: 20px;
+		width: 5%;
+		
+	}
+	
+	.arrow {
+		cursor: pointer;
+		
+	}
+	
+	.arrow:hover {
+		
+		fill: #451804
+		
+	}
+	
+	svg {
+		fill: #f0e7e7;
+		width: 30px;
+	}
+	
+	footer {
+		clear: both;
+		background-color: #282828;
+		color: #cbcbcb;
+	}
 }
-
-#rover-img {
-	width: 45%;
-	margin-bottom: 30px;
-
-}
-
-footer {
-	clear: both;
-	background-color: #282828;
-	color: #cbcbcb;
-}
-
 
 /* ==========================================================================
    Helper classes
