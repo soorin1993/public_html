@@ -8,18 +8,14 @@ var apikey = "vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR"
 
 var roverimg = document.getElementById("rover-img")
 var xhr = new XMLHttpRequest();
+var photoURL = ""
 
 
 pahrump.onclick = function() {
-	
-	var sol = "653"
-	
-	//url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + sol + "&camera=fhaz&page=1&api_key=" + apikey
+		
 	jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=653&camera=fhaz&page=1&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR"
-	
-	//url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&page=1&api_key="
-	//jsonURL = url.concat(apikey);	
 	httpGet(jsonURL);
+	roverimg.url = photoURL
 
 }
 
