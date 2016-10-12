@@ -1,4 +1,4 @@
-document.addEventListener("touchstart", function(){}, true);
+//document.addEventListener("touchstart", function(){}, true);
 
 var lab1_2 = document.getElementById("lab1_2");
 var lab3_5 = document.getElementById("lab3_5");
@@ -12,6 +12,11 @@ var line1;
 var line2;
 
 var lab7Done = false;
+
+var popup = document.getElementById("popup");
+var closeButton = document.getElementById("close");
+
+
 
 lab1_2.onclick = function() {
 
@@ -86,11 +91,8 @@ lab3_5.onclick = function() {
 		
 		image[4].src = "img/konami.jpg"
 		
+		}
 	}
-	
-	}
-	
-	
 }
 
 lab4.onclick = function() {
@@ -127,19 +129,53 @@ lab7.onmouseover = function() {
 }
 
 lab9.onclick = function() {
-		
-	var popup = document.getElementById("popup");
+
 	var submit = document.getElementById("submit");
+	popup.style.display = "block";
+	submit.addEventListener("click", animalPopup, false);	
+}
+
+closeButton.onclick = function() {
+	popup.style.display = "";
+	var content = document.getElementById("popup-content");
+	content.style.display = "none";
+
+}
+
+function animalPopup() {
 	
-	var close = document.getElementById("close");
-	close.onclick = function() {
-		
-		popup.style.display = "none;"
+	var summary = document.getElementById("summary").value = ""
+	
+	animal = document.getElementById("animal").value;
+	if (animal != "") {
+		document.getElementById("summary").value += animal + " is your favorite animal\n";
 	}
 	
-	popup.style.display = "block";
+	if(document.getElementById("hat").checked == true){
+		document.getElementById("summary").value += animal + " has a " + document.getElementById("hat").value + "\n";
+	}
+	if(document.getElementById("glasses").checked == true){
+		document.getElementById("summary").value += animal + " has " + document.getElementById("glasses").value + "\n";
+	}
+	else if(document.getElementById("necklace").checked == true){
+		document.getElementById("summary").value += animal + " has a " + document.getElementById("necklace").value + "\n";
+	}
 	
+	if(document.getElementById("update-yes").checked==true){
+		document.getElementById("summary").value += animal + " picture has not been updated\n";
+	}
+	else {
+		if (document.getElementById("update-no").checked==true){
+			document.getElementById("summary").value += animal + " picture has not been updated.\n";
+		}
+	}
 	
-	
+	if (document.getElementById("lab-list").value != "None" && document.getElementById("lab-list").value != "All"){
+		document.getElementById("summary").value += "Change pictures for the following labs: " + document.getElementById("lab-list").value;
+	}
+	else if (document.getElementById("lab-list").value == "All") {
+		
+		
+	}
 }
 

@@ -45,7 +45,6 @@ leftArrow.onclick = function() {
 		formatSol = lpad(currentSol, 3);
 		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + formatSol + "&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
 		getRequest(jsonURL);
-
 		
 	}
 	
