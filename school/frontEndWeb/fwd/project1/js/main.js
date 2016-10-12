@@ -1,3 +1,5 @@
+document.addEventListener("touchstart", function(){}, true);
+
 var pahrump = document.getElementById("pahrump");
 var kimberley = document.getElementById("kimberley");
 var cooperstown = document.getElementById("cooperstown");

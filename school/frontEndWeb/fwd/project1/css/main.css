@@ -95,6 +95,259 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@media only screen and (max-width: 700px) {
+
+	#curiosity-cover-container {
+		
+		width: 100%;
+		background-image: url("../img/space-bg.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	
+		
+	}
+	
+	#curiosity-cover img {
+		
+		width: 100%;
+		max-width: 1300px;
+		max-height: 700px;
+		display: block;
+		margin: 0 auto;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+			
+	}
+	
+	#about-curiosity-container {
+		
+		width: 100%;
+		background-color: #451804;
+		display: block;
+	
+		
+	}
+	
+	#about-curiosity {
+		
+		width: 70%;
+		max-width: 700px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0 auto;
+		
+	}
+	
+	#about-curiosity p {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 20px;
+		margin-botton: 20px;
+		padding: 0;
+	
+	}
+	
+	#display-container {
+		
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: #f0e7e7;
+		
+	}
+	
+	#display {
+		
+		overflow: hidden;
+		position: relative;	
+		display: block;
+		align-items: center;
+		flex-flow: row column;
+	
+	}
+	
+	#map {
+		width: 100%;
+		float: left;
+		
+	}
+	
+	#map img {
+		
+		width: 100%;
+		max-width: 100%;
+		z-index: 1;
+	  
+	  }
+	
+	.location {
+		
+		position: absolute;
+		z-index: 2;
+		width: 3vw;
+		height: 3vw;
+		background-color: rgba(255, 255, 255, .5);
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+		
+	}
+	
+	#pahrump {
+		
+		top: 36vw;
+		left: 13vw;
+	
+	}
+	
+	#kimberley {
+	
+		top: 26vw;
+		left: 24vw;
+	}
+	
+		
+	#cooperstown {
+	
+		top: 19vw;
+		left: 30vw;
+	}
+	
+	#darwin {
+		top: 13vw;
+		left: 35vw;
+	}
+	
+	#yellowknife {
+		top: 4vw;
+		left: 45vw;
+	}
+	
+	#bradbury {
+		top: 4vw;
+		left: 41vw;
+	}
+	#info {
+	
+		display: block;
+		vertical-align: middle;
+		padding: 8vw;
+		text-align: center;
+		
+	}
+	
+	#info-container {
+		
+		width: 100%;
+		height: auto;
+		float: left;
+			
+	}
+	
+	#info-text-place {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #3b3b3b;
+		font-size: 15px;
+		
+	}
+	
+	#info-text {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #3b3b3b;
+		font-size: 3vw;
+		
+	}
+	
+	#rover-container {
+		
+		width: 100%;
+		background-color: #c1440e;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox */
+		box-sizing: border-box;
+		
+	}
+	
+	#rover-img-container {
+		
+		width: 45%;
+		
+	}
+	
+	#rover-img {
+		
+		width: 100%;
+	
+	}
+	
+
+	#rover-info-container {
+		
+		width: 35%;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 5%;
+		
+	}
+
+	.arrow-container {
+		
+		margin-right: 20px;
+		margin-left: 20px;
+		width: 5%;
+		
+	}
+	
+	.arrow {
+		cursor: pointer;
+		
+	}
+	
+	.arrow:hover {
+		
+		fill: #451804
+		
+	}
+	
+	svg {
+		fill: #f0e7e7;
+		width: 30px;
+	}
+	
+	footer {
+		padding: 20px 40px 40px 40px;
+		clear: both;
+		background-color: #282828;
+		color: #f49242;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	
+	footer a {
+		display: block;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;	
+	}
+}
+
+
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
 
 	#curiosity-cover-container {
@@ -329,9 +582,20 @@ textarea {
 	}
 	
 	footer {
+		padding: 20px 40px 40px 40px;
 		clear: both;
 		background-color: #282828;
-		color: #cbcbcb;
+		color: #f49242;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	
+	footer a {
+		display: block;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;	
 	}
 }
 
