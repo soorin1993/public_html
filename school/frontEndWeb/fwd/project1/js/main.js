@@ -204,7 +204,7 @@ function changeData(e) {
     }
     else if (xhr.status == 400) {
 	    
-	    var message = "Sol " + String(currentSol) + " image is missing. Skip to the next sol?";
+	    var message = "Sol " + String(currentSol) + " image is missing from the NASA database. Skip to the next sol?";
 	    alert(message);   
 		currentSol += 1;
 		formatSol = lpad(currentSol, 3);
