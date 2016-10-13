@@ -283,7 +283,7 @@ body {
 	}
 	
 	#rover-img2 {
-		width: 80%;
+		width: 100%;
 	}
 	
 
@@ -323,6 +323,11 @@ body {
 		
 		fill: #451804;
 		
+	}
+
+	#right-arrow2 {
+	
+		float: right;
 	}
 
 	svg {
@@ -582,6 +587,11 @@ body {
 		
 		fill: #451804
 		
+	}
+	
+	#right-arrow {
+	
+		float: right;
 	}
 	
 	svg {
@@ -856,6 +866,11 @@ body {
 		
 		fill: #451804
 		
+	}
+	
+	#right-arrow {
+	
+		float: right;
 	}
 	
 	svg {
