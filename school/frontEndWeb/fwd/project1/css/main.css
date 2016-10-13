@@ -311,6 +311,18 @@ textarea {
 		fill: #451804;
 		
 	}
+	
+	.arrow:active{
+		
+		fill: #451804;
+		
+	}
+	
+	.arrow:focus{
+		
+		fill: #451804;
+		
+	}
 
 	svg {
 		fill: #f0e7e7;
