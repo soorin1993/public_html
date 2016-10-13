@@ -179,59 +179,51 @@ textarea {
 	}
 	
 	#map img {
-		
 		width: 100%;
 		max-width: 100%;
 		z-index: 1;
-	  
 	  }
 	
 	.location {
-		
 		position: absolute;
 		z-index: 2;
 		width: 3vw;
 		height: 3vw;
-		background-color: rgba(255, 255, 255, .5);
+		background-color: rgba(255, 255, 255, 0);
 		cursor: pointer;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
-
 		
 	}
 	
 	#pahrump {
-		
-		top: 36vw;
-		left: 13vw;
-	
+		top: 59vw;
+		left: 23vw;
 	}
 	
 	#kimberley {
-	
-		top: 26vw;
-		left: 24vw;
+		top: 42vw;
+		left: 40vw;
 	}
 	
 		
 	#cooperstown {
-	
-		top: 19vw;
-		left: 30vw;
+		top: 31vw;
+		left: 50vw;
 	}
 	
 	#darwin {
-		top: 13vw;
-		left: 35vw;
+		top: 21vw;
+		left: 57vw;
 	}
 	
 	#yellowknife {
-		top: 4vw;
-		left: 45vw;
+		top: 8vw;
+		left: 73vw;
 	}
 	
 	#bradbury {
-		top: 4vw;
-		left: 41vw;
+		top: 8vw;
+		left: 68vw;
 	}
 	#info {
 	
@@ -264,7 +256,7 @@ textarea {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 		color: #3b3b3b;
-		font-size: 3vw;
+		font-size: 15px;
 		
 	}
 	
