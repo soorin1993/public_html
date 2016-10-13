@@ -302,7 +302,7 @@ textarea {
 	
 	.arrow {
 		cursor: pointer;
-		-webkit-tap-highlight-color: #451804;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
 
 	}
 	

@@ -43,14 +43,15 @@ leftArrow.onclick = function() {
 		
 	}
 	else {
-		//leftArrow.style.fill = "#451804";
+		leftArrow.style.fill = "#451804";
 		currentSol -= 1;
 		formatSol = lpad(currentSol, 3);
 		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + formatSol + "&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
 		getRequest(jsonURL);
 		
 	}
-	//leftArrow.style.fill = "#f0e7e7";
+	sleep(1000);
+	leftArrow.style.fill = "#f0e7e7";
 	
 }
 
