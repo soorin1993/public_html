@@ -302,22 +302,16 @@ textarea {
 	
 	.arrow {
 		cursor: pointer;
-		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: #451804;
 
 	}
 	
 	.arrow:hover{
 		
-		fill: #451804
+		fill: #451804;
 		
 	}
-	
-	.arrow:active {
-		
-		fill: #451804
-		
-	}
-	
+
 	svg {
 		fill: #f0e7e7;
 		width: 30px;
