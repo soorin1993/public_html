@@ -143,6 +143,19 @@ body {
 		padding: 0;
 	}
 	
+	#click-map {
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+		text-align: center;
+		background-color: rgba(244, 146, 66, 1);
+		color: white;
+	}
+	
+	#click-map p {
+		padding: 0;
+		margin: 0;
+	}
+	
 	#display-container {
 		
 		width: 100%;
@@ -186,7 +199,7 @@ body {
 	}
 	
 	#pahrump {
-		top: 57vw;
+		top: 59vw;
 		left: 20vw;
 	}
 	
@@ -203,17 +216,17 @@ body {
 	
 	#darwin {
 		top: 20vw;
-		left: 55vw;
+		left: 57vw;
 	}
 	
 	#yellowknife {
 		top: 6vw;
-		left: 72vw;
+		left: 74vw;
 	}
 	
 	#bradbury {
 		top: 6vw;
-		left: 65vw;
+		left: 67vw;
 		background-color: white;
 
 	}

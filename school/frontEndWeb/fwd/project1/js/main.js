@@ -110,6 +110,12 @@ rightArrow.onclick = function() {
 }
 
 pahrump.onclick = function() {
+	pahrump.style.backgroundColor = "#c1440e";
+	kimberley.style.backgroundColor = "";
+	cooperstown.style.backgroundColor = "";
+	darwin.style.backgroundColor = "";
+	yellowknife.style.backgroundColor = "";
+	bradbury.style.backgroundColor = "";
 	
 	currentSol = 653;
 	jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=653&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
@@ -120,6 +126,13 @@ pahrump.onclick = function() {
 }
 
 kimberley.onclick = function() {
+	
+	pahrump.style.backgroundColor = "";
+	kimberley.style.backgroundColor = "#c1440e";
+	cooperstown.style.backgroundColor = "";
+	darwin.style.backgroundColor = "";
+	yellowknife.style.backgroundColor = "";
+	bradbury.style.backgroundColor = "";
 	
 	currentSol = 590;
 	jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=590&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";	
@@ -132,6 +145,13 @@ kimberley.onclick = function() {
 
 cooperstown.onclick = function() {
 	
+	pahrump.style.backgroundColor = "";
+	kimberley.style.backgroundColor = "";
+	cooperstown.style.backgroundColor = "#c1440e";
+	darwin.style.backgroundColor = "";
+	yellowknife.style.backgroundColor = "";
+	bradbury.style.backgroundColor = "";
+	
 	currentSol = 440;
 	jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=440&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";	
 	info = "Curiosity arrived at “Cooperstown”, an outcrop bearing candidate targets for examination with instruments on the rover's arm. Cooperstown is named after Cooperstown Member, a fine-grained sedimentary rock in proximity to the Coeymans Limestone. Some other rock formations in the quad are named Marcellus, Manor Kill, Union Springs and Oneonta.";
@@ -143,6 +163,13 @@ cooperstown.onclick = function() {
 
 darwin.onclick = function() {
 	
+	pahrump.style.backgroundColor = "";
+	kimberley.style.backgroundColor = "";
+	cooperstown.style.backgroundColor = "";
+	darwin.style.backgroundColor = "#c1440e";
+	yellowknife.style.backgroundColor = "";
+	bradbury.style.backgroundColor = "";
+	
 	currentSol = 392;
 	jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=392&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";	
 	info = "Darwin is a crater on Mars located at 57°S 19°E to the southeast of Argyre Planitia in Noachis Terra. It is approximately 176 km in diameter. The crater's name was formally approved by the IAU in 1973. To the northeast of Darwin are the craters Green and Roddenberry.";
@@ -153,6 +180,13 @@ darwin.onclick = function() {
 
 yellowknife.onclick = function() {
 
+	pahrump.style.backgroundColor = "";
+	kimberley.style.backgroundColor = "";
+	cooperstown.style.backgroundColor = "";
+	darwin.style.backgroundColor = "";
+	yellowknife.style.backgroundColor = "#c1440e";
+	bradbury.style.backgroundColor = "";
+
 	currentSol = 121;
 	jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=121&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";	
 	info = "Yellowknife Bay is a geologic formation in Gale Crater on the planet Mars. The site was chosen after much study of the region by previous missions. The Mars Reconnaissance Orbiter observed morphological features created by the presence of liquid water, suggesting the presence of an ancient lake which could have sustained microbial life.";
@@ -162,6 +196,13 @@ yellowknife.onclick = function() {
 }
 
 bradbury.onclick = function() {
+	
+	pahrump.style.backgroundColor = "";
+	kimberley.style.backgroundColor = "";
+	cooperstown.style.backgroundColor = "";
+	darwin.style.backgroundColor = "";
+	yellowknife.style.backgroundColor = "";
+	bradbury.style.backgroundColor = "#c1440e";
 	
 	currentSol = 0
 	jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";	
@@ -215,16 +256,3 @@ function changeData(e) {
     }
     
 }
-
-function moveLocationDiv() {
-
-	var w = window.outerWidth;
-    var h = window.outerHeight;
-    var txt = "Window size: width=" + w + ", height=" + h;
-    document.getElementById("test").innerHTML = txt;	
-    
-    //pahrump.style.top = -h + "px";
-    //pahrump.style.right = -w + "px";
-}
-
-
