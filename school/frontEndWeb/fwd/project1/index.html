@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
         
     </head>
-    <body ontouchstart="">
+    <body ontouchstart="" onresize="moveLocationDiv()">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -64,34 +64,46 @@
 		</div>
 		
 		<div id="rover-container">
-			<div class="arrow-container">
-				<svg id="left-arrow" class="arrow" id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.12 36.16"><polygon class="cls-1" points="5.95 24.01 6.01 23.96 6.11 24.06 18.21 36.16 30.12 36.16 16.39 22.43 12.06 18.11 11.96 18 16.23 13.73 29.96 0 18.06 0 5.95 12.1 0 18.06 5.95 24.01"/></svg>
-			</div>
+			<div id="rover-content">
+				<div class="arrow-container">
+					<svg id="left-arrow" class="arrow" id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.12 36.16"><polygon class="cls-1" points="5.95 24.01 6.01 23.96 6.11 24.06 18.21 36.16 30.12 36.16 16.39 22.43 12.06 18.11 11.96 18 16.23 13.73 29.96 0 18.06 0 5.95 12.1 0 18.06 5.95 24.01"/></svg>
+				</div>
 			
-			<div id="rover-img-container">
-				<img id="rover-img" src="img/mars_full.png" alt="rover image">
-			</div>
+				<div id="rover-img-container">
+					<img id="rover-img" src="img/mars_full.png" alt="rover image">
+				</div>
 			
-			<div id="rover-info-container">
+				<div id="rover-info-container">
 				
-				<p>ID: <span id="id"></span></p>
-				<p>Mars Date(sol): <span id="sol"></span></p>
-				<p>Camera: <span id="camera"></span></p>
-				<p>Earth Date: <span id="earth"><span></p>
+					<p>ID: <span id="id"></span></p>
+					<p>Mars Date(sol): <span id="sol"></span></p>
+					<p>Camera: <span id="camera"></span></p>
+					<p>Earth Date: <span id="earth"><span></p>
 				
-			</div>
-			<div class="arrow-container">
-				<svg id="right-arrow" class="arrow" id="right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.12 36.16"><polygon class="cls-1" points="24.17 12.15 24.11 12.2 24.01 12.1 11.91 0 0 0 13.73 13.73 18.05 18.06 18.16 18.16 13.89 22.43 0.15 36.16 12.06 36.16 24.17 24.06 30.12 18.11 24.17 12.15"/></svg>
+				</div>
+				<div class="arrow-container">
+					<svg id="right-arrow" class="arrow" id="right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.12 36.16"><polygon class="cls-1" points="24.17 12.15 24.11 12.2 24.01 12.1 11.91 0 0 0 13.73 13.73 18.05 18.06 18.16 18.16 13.89 22.43 0.15 36.16 12.06 36.16 24.17 24.06 30.12 18.11 24.17 12.15"/></svg>
+				</div>
 			</div>
 		</div>
-		
+				
 		<footer>
-			<h2>Resources</h2>
-			<a href="http://www.nasa.gov/mission_pages/mars/main/index.html">NASA Mission Pages</a>
-			<a href="http://mars.nasa.gov/msl/mission/science/goals/">Mars Science Laboratory Mission Goals</a>
-			<a href="https://en.wikipedia.org/wiki/Curiosity_(rover)">Wikipedia Mars Rover</a>
-			<a href="http://onlinelibrary.wiley.com/doi/10.1002/2014JE004622/full">Overview of the Mars Science Laboratory mission: Bradbury Landing to Yellowknife Bay and beyond</a>
+			<div id="resources">
+				<h2>Resources</h2>
+				<a href="http://www.nasa.gov/mission_pages/mars/main/index.html">NASA Mission Pages</a>
+				<a href="http://mars.nasa.gov/msl/mission/science/goals/">Mars Science Laboratory Mission Goals</a>
+				<a href="https://en.wikipedia.org/wiki/Curiosity_(rover)">Wikipedia Mars Rover</a>
+				<a href="http://onlinelibrary.wiley.com/doi/10.1002/2014JE004622/full">Overview of the Mars Science Laboratory mission: Bradbury Landing to Yellowknife Bay and beyond</a>
+			</div>
 			
+			<hr>
+			
+			<div id="myInfo">
+				<p>Created by Soo Park 2016.</p>
+				<p><a href="http://soorinpark.com">http://soorinpark.com</a></p>
+				<p><a href="http://github.com/soorin1993">http://github.com/soorin1993</a></p>
+			</div>
+		
 		</footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

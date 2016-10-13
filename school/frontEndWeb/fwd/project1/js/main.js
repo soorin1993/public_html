@@ -168,4 +168,15 @@ function changeData(e) {
     
 }
 
+function moveLocationDiv() {
+
+	var w = window.outerWidth;
+    var h = window.outerHeight;
+    var txt = "Window size: width=" + w + ", height=" + h;
+    document.getElementById("test").innerHTML = txt;	
+    
+    //pahrump.style.top = -h + "px";
+    //pahrump.style.right = -w + "px";
+}
+
 
