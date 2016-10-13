@@ -180,11 +180,12 @@ textarea {
 	  }
 	
 	.location {
+		border-radius: 50%;
 		position: absolute;
 		z-index: 2;
 		width: 5vw;
 		height: 5vw;
-		/*background-color: rgba(255, 255, 255, .5);*/
+		background-color: rgba(193, 68, 14, .5);
 		cursor: pointer;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		
@@ -451,29 +452,23 @@ textarea {
 		width: 100%;
 		padding: 0;
 		margin: 0;
-				background-color: #f0e7e7;
-
-		
+		background-color: #f0e7e7;		
 	}
 	
 	#display {
-		
 		overflow: hidden;
 		position: relative;	
 		display: flex;
 		align-items: center;
 		flex-flow: row column;
-	
 	}
 	
 	#map {
 		width: 60%;
 		float: left;
-		
 	}
 	
 	#map img {
-		
 		width: 100%;
 		max-width: 100%;
 		z-index: 1;
@@ -481,12 +476,12 @@ textarea {
 	  }
 	
 	.location {
-		
+		border-radius: 50%;
 		position: absolute;
 		z-index: 2;
 		width: 3vw;
 		height: 3vw;
-		/*background-color: rgba(255, 255, 255, .5);*/
+		background-color: rgba(193, 68, 14, .5);
 		cursor: pointer;
 		
 	}
@@ -500,7 +495,7 @@ textarea {
 	
 	#kimberley {
 	
-		top: 26vw;
+		top: 25vw;
 		left: 24vw;
 	}
 	
@@ -512,8 +507,8 @@ textarea {
 	}
 	
 	#darwin {
-		top: 13vw;
-		left: 35vw;
+		top: 12vw;
+		left: 34vw;
 	}
 	
 	#yellowknife {
@@ -523,7 +518,7 @@ textarea {
 	
 	#bradbury {
 		top: 4vw;
-		left: 41vw;
+		left: 40vw;
 	}
 	
 	
@@ -750,24 +745,25 @@ textarea {
 	  }
 	
 	.location {
+		border-radius: 50%;
 		position: absolute;
 		z-index: 2;
 		width: 30px;
 		height: 30px;
-		/*background-color: rgba(255, 255, 255, .5);*/
+		background-color: rgba(193, 68, 14, .5);
 		cursor: pointer;
 	}
 	
 	#pahrump {
 		
-		top: 360px;
-		left: 130px;
+		top: 362px;
+		left: 135px;
 	
 	}
 	
 	#kimberley {
 	
-		top: 260px;
+		top: 255px;
 		left: 240px;
 	}
 	
@@ -779,17 +775,17 @@ textarea {
 	}
 	
 	#darwin {
-		top: 130px;
+		top: 125px;
 		left: 350px;
 	}
 	
 	#yellowknife {
-		top: 40px;
+		top: 43px;
 		left: 450px;
 	}
 	
 	#bradbury {
-		top: 40px;
+		top: 43px;
 		left: 410px;
 	}
 	
