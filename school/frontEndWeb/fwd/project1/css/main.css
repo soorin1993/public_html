@@ -306,7 +306,13 @@ textarea {
 
 	}
 	
-	.arrow:hover, .arrow:active {
+	.arrow:hover{
+		
+		fill: #451804
+		
+	}
+	
+	.arrow:active {
 		
 		fill: #451804
 		
