@@ -50,7 +50,7 @@ leftArrow.onclick = function() {
 		getRequest(jsonURL);
 		
 	}
-	leftArrow.style.fill = "#f0e7e7";
+	//leftArrow.style.fill = "#f0e7e7";
 	
 }
 
@@ -69,7 +69,7 @@ rightArrow.onclick = function() {
 		getRequest(jsonURL);
 		
 	}
-	rightArrow.style.fill = "#f0e7e7";
+	//rightArrow.style.fill = "#f0e7e7";
 	
 }
 
