@@ -184,7 +184,7 @@ textarea {
 		z-index: 2;
 		width: 5vw;
 		height: 5vw;
-		background-color: rgba(255, 255, 255, 0);
+		/*background-color: rgba(255, 255, 255, .5);*/
 		cursor: pointer;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		
@@ -267,7 +267,11 @@ textarea {
 		
 	}
 	
-	#rover-content {
+	#rover-content1 {
+		display: none;
+	}
+	
+	#rover-inner-container {
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
@@ -275,25 +279,31 @@ textarea {
 	
 	#rover-img-container {
 		
-		width: 45%;
-		
+		display: block;
+		width: 80%;
+		text-align: center;
+
 	}
 	
 	#rover-img {
-		
-		width: 100%;
+		width: 80%;
+	}
 	
+	#rover-img2 {
+		width: 80%;
 	}
 	
 
-	#rover-info-container {
+	#rover-info-container2 {
 		
-		width: 35%;
+		width: 50%;
+		display: block;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 		color: #f0e7e7;
 		font-size: 15px;
 		padding: 5vw;
+		margin: 0 auto;
 		
 	}
 
@@ -301,7 +311,7 @@ textarea {
 		
 		margin-right: 20px;
 		margin-left: 20px;
-		width: 5%;
+		width: 10%;
 		
 	}
 	
@@ -476,7 +486,7 @@ textarea {
 		z-index: 2;
 		width: 3vw;
 		height: 3vw;
-		background-color: rgba(255, 255, 255, .5);
+		/*background-color: rgba(255, 255, 255, .5);*/
 		cursor: pointer;
 		
 	}
@@ -560,35 +570,33 @@ textarea {
 		box-sizing: border-box;
 		
 	}
+
+	#rover-content2 {
+		display: none;
+	}
 	
-	#rover-content {
+	#rover-content1 {
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
 	}
 	
 	#rover-img-container {
-		
 		width: 45%;
-		
 	}
 	
 	#rover-img {
-		
 		width: 100%;
-	
 	}
 	
 
 	#rover-info-container {
-		
 		width: 35%;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 		color: #f0e7e7;
 		font-size: 15px;
 		padding: 5%;
-		
 	}
 
 	.arrow-container {
@@ -663,20 +671,11 @@ textarea {
 @media only screen and (min-width: 1000px) {
 
 	#curiosity-cover-container {
-		
 		width: 100%;
-		/*
-		background-image: url("../img/space-bg.jpg");
-		background-size: 100%;
-		background-repeat: no-repeat;
-		*/
 		background-color: #282828;
-	
-		
 	}
 	
 	#curiosity-cover img {
-		
 		width: 100%;
 		max-width: 1300px;
 		display: block;
@@ -685,25 +684,19 @@ textarea {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-			
 	}
 	
 	#about-curiosity-container {
-		
 		width: 100%;
 		background-color: #451804;
 		display: block;
-	
-		
 	}
 	
 	#about-curiosity {
-		
 		max-width: 700px;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		margin: 0 auto;
-		
 	}
 	
 	#about-curiosity p {
@@ -761,7 +754,7 @@ textarea {
 		z-index: 2;
 		width: 30px;
 		height: 30px;
-		background-color: rgba(255, 255, 255, .5);
+		/*background-color: rgba(255, 255, 255, .5);*/
 		cursor: pointer;
 	}
 	
@@ -844,7 +837,11 @@ textarea {
 		
 	}
 	
-	#rover-content {
+	#rover-content2 {
+		display: none;
+	}
+	
+	#rover-content1 {
 		width: 1000px;
 		display: flex;
 		align-items: center;
@@ -936,6 +933,16 @@ textarea {
 		font-size: 14px;
 	
 	}
+
+	#myInfo a {
+		text-decoration: none;
+		color: #f49242;
+	}
+	
+	#myInfo a:hover {
+		color: #f0e7e7;	
+	}
+}
 
 /* ==========================================================================
    Helper classes

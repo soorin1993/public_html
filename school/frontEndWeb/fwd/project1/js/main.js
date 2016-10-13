@@ -16,6 +16,14 @@ var sol = document.getElementById("sol");
 var camera = document.getElementById("camera");
 var earth = document.getElementById("earth");
 
+
+// for mobile 
+var roverimg2 = document.getElementById("rover-img2");
+var id2 = document.getElementById("id2");
+var sol2 = document.getElementById("sol2");
+var camera2 = document.getElementById("camera2");
+var earth2 = document.getElementById("earth2");
+
 var xhr = new XMLHttpRequest();
 var photoURL = "";
 var info = "";
@@ -25,14 +33,46 @@ var currentSol = -1;
 var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
 
-/*
-var jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
-getRequest(jsonURL);
-*/
+var leftArrow2 = document.getElementById("left-arrow2");
+var rightArrow2 = document.getElementById("right-arrow2");
 
 function lpad(value, padding) {
     var zeroes = new Array(padding+1).join("0");
     return (zeroes + value).slice(-padding);
+}
+
+leftArrow2.onclick = function() {
+	
+	if (currentSol == 0 || currentSol == -1) {
+		
+		alert("Please go forward to view the next sol");
+		
+	}
+	else {
+		currentSol -= 1;
+		formatSol = lpad(currentSol, 3);
+		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + formatSol + "&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
+		getRequest(jsonURL);
+		
+	}
+	
+}
+
+rightArrow2.onclick = function() {
+	
+	if (currentSol == 1485) {
+		
+		alert("Recheaded the maximum sol");
+		
+	}
+	else {
+		currentSol += 1;
+		formatSol = lpad(currentSol, 3);
+		jsonURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + formatSol + "&camera=fhaz&page=1&call_back=?&api_key=vkcnKWOCFI2hf9pEmTYO008v1GjoMFgifWYwqYuR";
+		getRequest(jsonURL);
+		
+	}
+	
 }
 
 leftArrow.onclick = function() {
@@ -151,7 +191,15 @@ function changeData(e) {
 		roverimg.src = photoURL;
 		roverimg.style.marginTop = "0px";
 		siteInfo.innerHTML = info;
-
+		
+	
+			// for mobile
+			roverimg2.src = photoURL;
+			id2.innerHTML = response.photos[0].id;
+			sol2.innerHTML = response.photos[0].sol;
+			camera2.innerHTML = response.photos[0].camera.full_name;
+			earth2.innerHTML = response.photos[0].earth_date;
+		
 		
     }
     else if (xhr.status == 400) {
