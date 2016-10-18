@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+#nav a {
+	text-decoration: none;
+	color:#85ff4c;
+	margin: 0 20px;
+}
+
+#image-container {
+	width: 100%;
+}
+
+
+#image {
+	width: 100%;
+}
+
+#summary-container {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+#summary {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#welcome {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#order-container {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+	
+	body {
+		font-family: 'Raleway', sans-serif;
+		font-size: 3vw;	
+	}
+	
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 10vw;
+		color: #3e3e3e;
+		text-align: center;
+	}
+	
+	#nav {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 5vw;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	#bike-nav {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	
+	#bike-nav img {
+		margin: 0 10px;
+		width: 10vw;
+	}
+	
+	#image-content {
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	#summary-content {
+		width: 80%;
+		margin: 20px auto;
+	}
+	
+	#order-content {
+		width: 80%;
+		margin: 20px auto;
+	}
+
+}
+	
+@media screen and (min-width: 900px) {
+	
+	body {
+		font-family: 'Raleway', sans-serif;
+		font-size: 15px;	
+	}
+	
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 50px;
+		color: #3e3e3e;
+		text-align: center;
+	}
+	
+	#nav {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	#bike-nav {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	
+	#bike-nav img {
+		margin: 0 10px;
+		width: 50px;
+	}
+	
+	#image-content {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	#summary-content {
+		width: 50%;
+		margin: 20px auto;
+	}
+	
+	#order-content {
+		width: 20%;
+		margin: 20px auto;
+	}
+		
+}

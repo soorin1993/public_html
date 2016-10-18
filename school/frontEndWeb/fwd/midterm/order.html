@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Order</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<h1>Order</h1>
+	
+	<div id="nav">
+		<a href="index.html">Home</a>
+		<a href="destination.html">Destination</a>
+		<a href="trips.html">Trips</a>
+	</div>
+	
+	<div id="order-container">
+		<div id="order-content">							
+			<form>
+			
+			<label for="name">Name</label>
+			<div class="formelement">
+				<input type="text" id="name">
+			</div>
+				
+			<label for="email">Email</label>
+			<div class="formelement">
+				<input type="text" id="email">
+			</div>
+			
+			<label for="address">Address</label>
+			<div class="formelement">
+				<input type="text" id="address">
+			</div>
+	
+			<label for="types">What type of Cycling do you enjoy?</label>
+			<div class="formlement" id="items">
+				<div>
+					<input type = "checkbox" id = "road" value = "road">
+					<label for="road">Road</label>
+				</div>
+				
+				<div>
+					<input type = "checkbox" id = "mountain" value = "mountain">
+					<label for="mountain">Mountain</label>
+				</div>
+				
+				<div>
+					<input type = "checkbox" id = "cyclocross" value = "cyclocross">
+					<label for="cyclocross">Cyclocross</label>
+				</div>
+				
+				<div>
+					<input type = "checkbox" id = "rec" value="rec">
+					<label for="rec">Recreational</label>
+				</div>
+				
+				<div>
+					<input type = "checkbox" id = "bmx" value = "bmx">
+					<label for="bmx">BMX</label>
+				</div>
+				
+				<div>
+					<input type = "checkbox" id = "track" value = "track">
+					<label for="track">Track</label>
+				</div>
+			</div>
+			
+			<br>
+			
+			<label for="rent">Do you need to rent a bike?</label>
+			<div class="formelement" id="rent">
+				<div>
+					<input  type="radio" name="update" id="rent-yes" value="rent-yes">
+					<label for="rent-yes">Yes</label>
+				</div>
+				
+				<div>
+					<input  type="radio" name="update" id="rent-no" value="rent-no">
+					<label for="rent-no">No</label>
+				</div>
+			</div>
+			
+			<br>
+			
+			<label for="seasons">What seasons will you be visiting Colorado?</label>
+			<div class="formelement">
+				<select id="seasons">
+					<option value="None">None</option>
+					<option value="Spring">Spring</option>
+					<option value="Summer">Summer</option>
+					<option value="Fall">Fall</option>
+					<option value="Winter">Winter</option>
+				</select>
+			</div>
+	
+			<br>
+	
+			<input type="button" id="enter" value="Enter">
+			
+			<br><br>
+			
+			<textarea id="summary" rows="10" cols="30"></textarea>
+		</div>
+	</div>
+			
+	<script type="text/javascript" src="order.js"></script>
+	
+</body>
+</html>
