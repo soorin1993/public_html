@@ -3,7 +3,10 @@
 var lab1_2 = document.getElementById("lab1_2");
 var lab3_5 = document.getElementById("lab3_5");
 var lab4 = document.getElementById("lab4");
-var lab6 = document.getElementById("lab6");
+var lab7 = document.getElementById("lab7");
+var lab9 = document.getElementById("lab9");
+var lab10 = document.getElementById("lab10");
+
 
 var textColor;
 var bgColor;
@@ -13,10 +16,12 @@ var line2;
 
 var lab7Done = false;
 
-var popup = document.getElementById("popup");
 var closeButton = document.getElementById("close");
+var formPopup = document.getElementById("form-popup");
 
-
+var mapContainer = document.getElementById("map-container");
+var mapPopup = document.getElementById("map-popup");
+var mapCloseButton = document.getElementById("map-close");
 
 lab1_2.onclick = function() {
 
@@ -131,14 +136,13 @@ lab7.onmouseover = function() {
 lab9.onclick = function() {
 
 	var submit = document.getElementById("submit");
-	popup.style.display = "block";
+	formPopup.style.display = "block";
 	submit.addEventListener("click", animalPopup, false);	
 }
 
 closeButton.onclick = function() {
-	popup.style.display = "";
-	var content = document.getElementById("popup-content");
-	content.style.display = "none";
+	var formContainer = document.getElementById("form-container");
+	formContainer.style.display = "none";
 
 }
 
@@ -177,5 +181,50 @@ function animalPopup() {
 		
 		
 	}
+	
 }
 
+lab10.onclick = function() {
+	
+	mapContainer.style.display = "block";
+	mapPopup.style.display = "block";
+	mapCloseButton.addEventListener("click", mapClose, false);	
+	initMap();
+}
+
+function initMap() {
+	var map = new google.maps.Map(document.getElementById('map-popup'), {
+	  center: {lat: -34.397, lng: 150.644},
+	  zoom: 10
+	});
+	//var infoWindow = new google.maps.InfoWindow({map: map});
+	
+	// Try HTML5 geolocation.
+	if (navigator.geolocation) {
+	  navigator.geolocation.getCurrentPosition(function(position) {
+	    var pos = {
+	      lat: position.coords.latitude,
+	      lng: position.coords.longitude
+	    };
+	
+	    //infoWindow.setPosition(pos);
+	    //infoWindow.setContent('Location found.');
+	    map.setCenter(pos);
+	  }, function() {
+	    handleLocationError(true, infoWindow, map.getCenter());
+	  });
+	} else {
+	  // Browser doesn't support Geolocation
+	  handleLocationError(false, infoWindow, map.getCenter());
+	}
+}
+	
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+	alert("Map couldn't be loaded");
+}
+
+function mapClose() {
+	mapPopup.style.display = "none";
+	mapContainer.style.display = "none";
+
+}
