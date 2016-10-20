@@ -6,7 +6,7 @@ var lab4 = document.getElementById("lab4");
 var lab7 = document.getElementById("lab7");
 var lab9 = document.getElementById("lab9");
 var lab10 = document.getElementById("lab10");
-
+var lab11 = document.getElementById("lab11");
 
 var textColor;
 var bgColor;
@@ -22,6 +22,10 @@ var formPopup = document.getElementById("form-popup");
 var mapContainer = document.getElementById("map-container");
 var mapPopup = document.getElementById("map-popup");
 var mapCloseButton = document.getElementById("map-close");
+
+var canvasContainer = document.getElementById("canvas-container");
+var canvasPopup = document.getElementById("canvas-popup");
+var canvasCloseButton = document.getElementById("canvas-close");
 
 lab1_2.onclick = function() {
 
@@ -227,4 +231,144 @@ function mapClose() {
 	mapPopup.style.display = "none";
 	mapContainer.style.display = "none";
 
+}
+
+lab11.onclick = function() {
+	
+	canvasContainer.style.display = "block";
+	canvasPopup.style.display = "block";
+	canvasCloseButton.addEventListener("click", canvasClose, false);	
+	mickeyMouse()
+}
+
+function canvasClose() {
+	canvasPopup.style.display = "none";
+	canvasContainer.style.display = "none";
+
+}
+
+
+function mickeyMouse() {
+	
+	var thecanvas;
+	var context;
+	thecanvas = document.getElementById("canvas-popup");
+    context = thecanvas.getContext("2d");
+    
+    //face
+    context.beginPath();
+	context.arc(225,275,120,0,2*Math.PI);
+	context.closePath();
+	context.fillStyle="black";
+    context.fill();
+
+	//ear1
+	context.beginPath();
+	context.arc(125,125,75,0,2*Math.PI);
+	context.closePath();
+	context.fillStyle="black";
+    context.fill();
+	
+	//ear2
+	context.beginPath();
+	context.arc(325,125,75,0,2*Math.PI);
+    context.closePath();
+    context.fillStyle="black";
+    context.fill();
+    
+    //bottom half
+    context.beginPath();
+	context.arc(225,275,120,0,Math.PI);
+	context.closePath();
+	context.fillStyle="black";
+    context.fill();
+    
+	//cheeks
+    context.beginPath();
+    context.ellipse(300, 325, 30, 70, 45*Math.PI/180, 0, 2 * Math.PI);
+    context.ellipse(150, 325, 30, 70, 315*Math.PI/180, 0, 2 * Math.PI);
+	context.closePath();
+	context.strokeStyle="black";
+	context.lineWidth=10;
+	context.stroke();
+    context.fillStyle="white";
+    context.fill();
+    
+    //eyes white
+    context.beginPath();
+    context.ellipse(190, 275, 60, 100, Math.PI/180, 0, 2 * Math.PI);
+    context.ellipse(260, 275, 60, 100, Math.PI/180, 0, 2 * Math.PI);
+    context.closePath();
+    context.fillStyle="white";
+    context.fill();
+    
+    //eye1
+    context.beginPath();
+    context.ellipse(200, 250, 15, 35, Math.PI/180, 0, 2 * Math.PI);
+    context.closePath();
+    context.fillStyle="black";
+    context.fill();
+    
+    //eye2
+    context.beginPath();
+    context.ellipse(250, 250, 15, 35, Math.PI/180, 0, 2 * Math.PI);
+    context.closePath();
+    context.fillStyle="black";
+    context.fill();
+    
+    // mouth
+    context.beginPath();
+	context.arc(225,340,60,0,2*Math.PI);
+    context.strokeStyle="black";
+    context.closePath();
+	context.lineWidth=10;
+	context.stroke();
+    context.fillStyle="white";
+    context.fill();
+    
+    // mouth
+    context.beginPath();
+    context.ellipse(225, 338, 67, 59, Math.PI/180, 0, 2*Math.PI);
+    context.closePath();
+    context.fillStyle="white";
+    context.fill();
+    
+    //nose
+    context.beginPath();
+    context.ellipse(225, 300, 33, 17, Math.PI/180, 0, 2*Math.PI);
+    context.closePath();
+    context.fillStyle="black";
+    context.fill();
+    
+    //mouth line
+    context.beginPath();
+	context.arc(325, 300, 20, 1.7*Math.PI, 1.9*Math.PI);
+    context.strokeStyle="black";
+	context.lineWidth = 3;
+	context.stroke();    
+	
+	context.beginPath();
+	context.arc(125, 300, 20, 1.1*Math.PI, 1.3*Math.PI);
+    context.strokeStyle="black";
+	context.lineWidth = 3;
+	context.stroke(); 
+	
+	context.beginPath();
+	context.arc(225, 230, 130, .85*Math.PI, 2.15*Math.PI, true);
+    context.strokeStyle="black";
+	context.lineWidth = 3;
+	context.stroke();
+	
+	context.beginPath();
+	context.arc(225, 340, 50, .92*Math.PI, 2.08*Math.PI, true);
+	context.closePath();
+	context.fillStyle="black";
+    context.fill();
+
+	context.beginPath();
+	context.arc(225, 228, 130, 0.7*Math.PI, 2.2*Math.PI, true);
+	context.closePath();
+	context.fillStyle="white";
+    context.fill();
+    
 }
