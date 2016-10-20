@@ -44,7 +44,7 @@ html {
     border: none;
     margin: 0;
     padding: 0;
-    background-color: #c5c5c5;
+    background-color: #FFF0A5;
 }
 
 /*
@@ -95,11 +95,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
 body {
 	
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	color: #474747;
 }
 
 @media screen and (min-width: 650px) {
@@ -113,6 +118,8 @@ body {
 	    overflow: hidden;
 	    white-space: nowrap;
 	    width: 100%;
+    	background-color: #8E2800;
+
 	    /*
 		background: repeating-linear-gradient(
 			45deg,
@@ -124,20 +131,17 @@ body {
 
 	}
 	
-	.title h1 {
-		
+	.title h1 {	
 		font-size: 60px;
-		color: #3F547F;
+		color: #FFF0A5;
 		font-family: 'Miriam Libre', sans-serif;
 		margin: 0;
-
-
-	
 	}
+	
 	.items-containter {
 		
 		display: block;
-		background-color: #F68735;
+		background-color: #468966;
 	}
 	
 	.items {
@@ -162,14 +166,14 @@ body {
 	
 	.items a:hover {
 		
-		color: aqua;
+		color: #FFF0A5;
 		
 	}
 	
 	
 	.about-container {
 
-		background-color: white;		
+		background-color: #B64926;		
 		display: block;
 
 	}
@@ -183,12 +187,12 @@ body {
 		text-align: center;
 		padding-top: 50px;
 		padding-bottom: 50px;
-		
+		color: white;
 	}
 
 	.lab-container {
 		
-		background-color: #DDDDDD;
+		background-color: #FFB03B;
 		display: block;
 		/*
 		background: repeating-linear-gradient(
@@ -221,11 +225,34 @@ body {
 		
 	}
 	
+	.lab-text {
+		padding: 30px;
+		z-index: 2;
+		background: rgba(142, 40, 0, 0.9);
+		color: white;		
+		position: relative;
+		width: 300px;
+		height: 300px;
+		top: -315px;
+		visibility: hidden;
+		text-align: center;
+		display: flex;
+		align-items: center;
+	}
+	
+	.lab ul li:hover .lab-text{
+		visibility: visible;
+	}
+	
 	.lab ul li {
 		
+		width: 300px;
+		height: 300px;
 		display: inline-block;
 		margin: 20px;
-		border: solid #3F547F 1px;
+		vertical-align: top;
+
+/* 		border: solid #468966 2px; */
 		
 		
 	}
@@ -235,7 +262,14 @@ body {
 		height: 100px;
 		display: block;
 		line-height: 100px;
-		margin-left: 50px;
+		padding-left: 50px;
+		background-color: #468966;
+		color: #FFF0A5;
+	}
+	
+	footer p {
+		margin: 0;
+		padding: 0;
 	}
 	
 }
