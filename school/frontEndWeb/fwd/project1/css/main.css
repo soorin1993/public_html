@@ -457,6 +457,14 @@ body {
 		flex-flow: row column;
 	}
 	
+	#click-map {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-align: center;
+		background-color: rgba(244, 146, 66, 1);
+		color: white;
+	}
+	
 	#map {
 		width: 60%;
 		float: left;
@@ -720,6 +728,14 @@ body {
 		width: 1000px;
 		margin: 0 auto;
 		background-color: #282828;	
+	}
+	
+	#click-map {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-align: center;
+		background-color: rgba(244, 146, 66, 1);
+		color: white;
 	}
 	
 	#map {
