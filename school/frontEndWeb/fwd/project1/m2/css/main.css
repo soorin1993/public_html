@@ -1,0 +1,1121 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+	#curiosity-cover-container {
+		
+		width: 100%;
+		background-image: url("../img/space-bg.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	
+	#curiosity-cover img {
+		width: 100%;
+		max-width: 1300px;
+		max-height: 700px;
+		display: block;
+		margin: 0 auto;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#about-curiosity-container {
+		width: 100%;
+		background-color: #451804;
+		display: block;
+	}
+	
+	#about-curiosity {
+		padding: 5vw;
+		margin: 0 auto;
+	}
+	
+	#about-curiosity p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		text-align: center;
+		padding: 0;
+	}
+	
+	#click-map {
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+		text-align: center;
+		background-color: rgba(244, 146, 66, 1);
+		color: white;
+	}
+	
+	#click-map p {
+		padding: 0;
+		margin: 0;
+	}
+	
+	#display-container {
+		
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: #282828;
+		
+	}
+	
+	#display {
+		
+		overflow: hidden;
+		position: relative;	
+		display: block;
+		align-items: center;
+		flex-flow: row column;
+	
+	}
+	
+	#map {
+		width: 100%;
+		float: left;
+		
+	}
+	
+	#map img {
+		width: 100%;
+		max-width: 100%;
+		z-index: 1;
+	  }
+	
+	.location {
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+		width: 6vw;
+		height: 6vw;
+		background-color: rgba(244, 146, 66, 1);
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+	
+	#pahrump {
+		top: 59vw;
+		left: 20vw;
+	}
+	
+	#kimberley {
+		top: 41vw;
+		left: 38vw;
+	}
+	
+		
+	#cooperstown {
+		top: 30vw;
+		left: 48vw;
+	}
+	
+	#darwin {
+		top: 20vw;
+		left: 57vw;
+	}
+	
+	#yellowknife {
+		top: 6vw;
+		left: 74vw;
+	}
+	
+	#bradbury {
+		top: 6vw;
+		left: 67vw;
+		background-color: white;
+
+	}
+	#info {
+		display: block;
+		vertical-align: middle;
+		padding: 5vw;
+		text-align: center;
+	}
+	
+	#info-container {
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+	
+	#info-text-place {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		
+	}
+	
+	#info-text {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		
+	}
+	
+	#rover-container {
+		
+		width: 100%;
+		background-color: #c1440e;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox */
+		box-sizing: border-box;
+		
+	}
+	
+	#rover-content1 {
+		display: none;
+	}
+	
+	#rover-inner-container {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
+	
+	#rover-img-container {
+		
+		display: block;
+		width: 80%;
+		text-align: center;
+
+	}
+	
+	#rover-img {
+		width: 80%;
+	}
+	
+	#rover-img2 {
+		width: 100%;
+	}
+	
+
+	#rover-info-container2 {
+		
+		width: 50%;
+		display: block;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 5vw;
+		margin: 0 auto;
+		
+	}
+
+	.arrow-container {
+		
+		margin-right: 20px;
+		margin-left: 20px;
+		width: 10%;
+		
+	}
+	
+	.arrow {
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	}
+	.arrow:active{
+		
+		fill: #451804;
+		
+	}
+	
+	.arrow:focus{
+		
+		fill: #451804;
+		
+	}
+
+	#right-arrow2 {
+	
+		float: right;
+	}
+
+	svg {
+		fill: #f0e7e7;
+		width: 30px;
+	}
+	
+	footer {
+		padding: 3vw 8vw 8vw 8vw;
+		clear: both;
+		background-color: #282828;
+		color: #f49242;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	
+	footer hr {
+	
+	margin-right: -8vw;
+	margin-left: -8vw;
+	
+	}
+	
+	#resources a {
+		display: block;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		margin-bottom: 2vw;
+		color: #f0e7e7;	
+
+	}
+	
+	#resources a:hover {
+		color: #c1440e;
+	}
+
+	#myInfo p {	
+		margin-right: -4vw;
+		text-align: right;
+		margin-bottom: -2vw;
+		font-size: 14px;
+	
+	}
+	
+	#myInfo a {
+		text-decoration: none;
+		color: #f49242;
+	}
+	
+	#myInfo a:hover {
+		color: #f0e7e7;	
+	}
+	
+}
+
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+
+	#curiosity-cover-container {	
+		width: 100%;
+		background-color: #282828;	
+	}
+	
+	#curiosity-cover img {
+		width: 100%;
+		max-width: 1300px;
+		max-height: 700px;
+		display: block;
+		margin: 0 auto;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#about-curiosity-container {
+		width: 100%;
+		background-color: #451804;
+		display: block;
+	}
+	
+	#about-curiosity {
+		width: 70%;
+		max-width: 700px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0 auto;
+	}
+	
+	#about-curiosity p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+	
+	#display-container {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: #282828;		
+	}
+	#display {
+		overflow: hidden;
+		position: relative;	
+		display: flex;
+		align-items: center;
+		flex-flow: row column;
+	}
+	
+	#click-map {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-align: center;
+		background-color: rgba(244, 146, 66, 1);
+		color: white;
+	}
+	
+	#map {
+		width: 60%;
+		float: left;
+	}
+	
+	#map img {
+		width: 100%;
+		max-width: 100%;
+		z-index: 1;
+	  }
+	
+	.location {
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+		width: 3vw;
+		height: 3vw;
+		background-color: rgba(244, 146, 66, 1);		
+		cursor: pointer;
+	}
+	
+	#pahrump {
+		top: 35vw;
+		left: 13vw;
+	}
+	
+	#kimberley {
+		top: 25vw;
+		left: 24vw;
+	}
+	
+		
+	#cooperstown {
+		top: 18vw;
+		left: 29vw;
+	}
+	
+	#darwin {
+		top: 12vw;
+		left: 34vw;
+	}
+	
+	#yellowknife {
+		top: 4vw;
+		left: 45vw;
+	}
+	
+	#bradbury {
+		top: 4vw;
+		left: 40vw;
+		background-color: white;
+	}
+	
+	
+	#info-container {
+		
+		width: 40%;
+		float: left;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #3b3b3b;
+		font-size: 15px;
+		text-align: center;
+			
+	}
+	
+	#info-text-place {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 20px;
+		
+	}
+	
+	#info-text {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 20px;
+		
+	}
+	
+	#rover-container {
+		
+		width: 100%;
+		background-color: #c1440e;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox */
+		box-sizing: border-box;
+		
+	}
+
+	#rover-content2 {
+		display: none;
+	}
+	
+	#rover-content1 {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
+	
+	#rover-img-container {
+		width: 45%;
+	}
+	
+	#rover-img {
+		width: 100%;
+	}
+	
+
+	#rover-info-container {
+		width: 35%;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 5%;
+	}
+
+	.arrow-container {
+		
+		margin-right: 20px;
+		margin-left: 20px;
+		width: 5%;
+		
+	}
+	
+	.arrow {
+		cursor: pointer;
+		
+	}
+	
+	.arrow:hover {
+		
+		fill: #451804
+		
+	}
+	
+	#right-arrow {
+	
+		float: right;
+	}
+	
+	svg {
+		fill: #f0e7e7;
+		width: 30px;
+	}
+	
+	footer {
+		padding: 20px 40px 40px 40px;
+		clear: both;
+		background-color: #282828;
+		color: #f49242;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	
+	footer hr {
+	
+	margin-right: -40px;
+	margin-left: -40px;
+	
+	}
+	
+	#resources a {
+		display: block;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;	
+		margin-bottom: 2vw;
+	}
+	
+	#resources a:hover {
+		color: #c1440e;
+	}
+
+	#myInfo p {	
+		margin-right: -15px;
+		text-align: right;
+		margin-bottom: -12px;
+		font-size: 14px;
+	}
+	#myInfo a {
+		text-decoration: none;
+		color: #f49242;
+	}
+	
+	#myInfo a:hover {
+		color: #f0e7e7;	
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+
+	#curiosity-cover-container {
+		width: 100%;
+		background-color: #282828;
+	}
+	
+	#curiosity-cover img {
+		width: 100%;
+		max-width: 1300px;
+		display: block;
+		margin: 0 auto;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#about-curiosity-container {
+		width: 100%;
+		background-color: #451804;
+		display: block;
+	}
+	
+	#about-curiosity {
+		max-width: 700px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0 auto;
+	}
+	
+	#about-curiosity p {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 20px;
+		margin-botton: 20px;
+		padding: 0;
+	
+	}
+	
+	#display-container {
+		
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: #282828;
+		
+	}
+	
+	#display {
+		
+		overflow: hidden;
+		position: relative;	
+		display: flex;
+		align-items: center;
+		flex-flow: row column;
+		width: 1000px;
+		margin: 0 auto;
+		background-color: #282828;	
+	}
+	
+	#click-map {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-align: center;
+		background-color: rgba(244, 146, 66, 1);
+		color: white;
+	}
+	
+	#map {
+		width: 60%;
+		float: left;
+		
+	}
+	
+	#map img {
+		
+		width: 100%;
+		max-width: 100%;
+		z-index: 1;
+	  
+	  }
+	
+	.location {
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+		width: 30px;
+		height: 30px;
+		background-color: rgba(244, 146, 66, 1);		
+		cursor: pointer;
+	}
+	
+	#pahrump {
+		
+		top: 360px;
+		left: 130px;
+	
+	}
+	
+	#kimberley {
+	
+		top: 255px;
+		left: 240px;
+	}
+	
+		
+	#cooperstown {
+	
+		top: 190px;
+		left: 295px;
+	}
+	
+	#darwin {
+		top: 125px;
+		left: 350px;
+	}
+	
+	#yellowknife {
+		top: 43px;
+		left: 450px;
+	}
+	
+	#bradbury {
+		top: 43px;
+		left: 410px;
+		background-color: white;
+	}
+	
+	
+	#info-container {
+		
+		width: 40%;
+		float: left;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 15px;
+		text-align: center;
+		background-color: 
+			
+	}
+	
+	#info-text-place {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 20px;
+		
+	}
+	
+	#info-text {
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 20px;
+		
+	}
+	
+	#rover-container {
+		
+		width: 100%;
+		background-color: #c1440e;
+		padding: 50px;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox */
+		box-sizing: border-box;
+		
+	}
+	
+	#rover-content2 {
+		display: none;
+	}
+	
+	#rover-content1 {
+		width: 1000px;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	
+	#rover-img-container {
+		
+		width: 45%;
+		
+	}
+	
+	#rover-img {
+		
+		width: 100%;
+	
+	}
+	
+
+	#rover-info-container {
+		
+		width: 35%;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;
+		font-size: 15px;
+		padding: 5%;
+	}
+
+	.arrow-container {
+		margin-right: 20px;
+		margin-left: 20px;
+		width: 5%;
+	}
+	
+	.arrow {
+		cursor: pointer;
+		
+	}
+	
+	.arrow:hover {
+		
+		fill: #451804
+		
+	}
+	
+	#right-arrow {
+	
+		float: right;
+	}
+	
+	svg {
+		fill: #f0e7e7;
+		width: 30px;
+	}
+	
+	footer {
+		padding: 20px 40px 40px 40px;
+		clear: both;
+		background-color: #282828;
+		color: #f49242;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+	
+	footer hr {
+	
+	margin-right: -40px;
+	margin-left: -40px;
+	
+	}
+	
+	#resources a {
+		display: block;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #f0e7e7;	
+		margin-bottom: 2vw;
+	}
+	
+	#resources a:hover {
+		color: #c1440e;
+	}
+
+	#myInfo p {	
+		margin-right: -15px;
+		text-align: right;
+		margin-bottom: -12px;
+		font-size: 14px;
+	
+	}
+
+	#myInfo a {
+		text-decoration: none;
+		color: #f49242;
+	}
+	
+	#myInfo a:hover {
+		color: #f0e7e7;	
+	}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
