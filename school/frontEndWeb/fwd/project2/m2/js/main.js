@@ -27,30 +27,9 @@ var infoWindow = new google.maps.InfoWindow({map: map});
         }
 }
 
+search()
 /* brewery db */
 /*
-
-var express = require('express');
-var request = require('request');
-var app = express();
-var bodyParser = require('body-parser');
-
-app.use(bodyParser.json());
-app.set('port', 3000);
-
-app.use(function (req, res, next) {
-  // Website sending requests
-  res.setHeader('Access-Control-Allow-Origin', 'http://52.40.59.238');
-  // Request method that you are allowing (we are using GET)
-  res.setHeader('Access-Control-Allow-Methods', 'GET');
-  // Request header types that are allowed
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-  // The following is set to false since we won't be addressing cookies and sessions
-  res.setHeader('Access-Control-Allow-Credentials', false);
-  // Proceed to the next layer of middleware
-  next();
-});	
-*/
 
 var URL = "http://api.brewerydb.com/v2/beers/?key=546e79849610632a56e3ea49a776f1ba&name=bud+light"
 
@@ -66,3 +45,32 @@ req.addEventListener('load', function() {
   }
 });
 req.send(null);
+*/
+
+function search() {
+	//daURL = "http://52.40.59.238:3000/";
+
+		//var searchInput = document.getElementById('searchInput').value;
+		//var textToSubmit = "?search=" + searchInput;
+		//var textToSubmit = "?search=" + "fat";
+		var newURL = "http://api.brewerydb.com/v2/beers/?key=546e79849610632a56e3ea49a776f1ba&name=bud+light"
+		//var newURL = daURL + textToSubmit;
+		var req = new XMLHttpRequest();
+		req.open("get", newURL, true);
+		req.addEventListener('load', function() {
+			if(req.status >= 200 && req.status < 400) {
+				var response = JSON.parse(req.responseText);
+				response.headers = "Access-Control-Allow-Origin: *";
+				var numberOfResults = response.totalResults;
+				console.log(numberOfResults);
+				showResults(response);		
+
+			$("#search-result").text("Search results for: " + searchInput);
+			
+				
+			} else {
+				console.log("Error in network request: " + req.statusText);
+			}
+		});
+		req.send(null);
+}
