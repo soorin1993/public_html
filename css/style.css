@@ -148,10 +148,8 @@ body {
 }
 
 #slider1 img {
-	max-height: 500px;
+	height: 500px;
 	max-width: 1000px;
-
-
 }
 
 #main {
@@ -182,7 +180,7 @@ body {
 }
 
 #slider2 img {
-	max-width: 300px;
+	max-height: 300px;
 	margin: 0 30px;
 }
 
