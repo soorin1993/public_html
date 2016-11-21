@@ -1,0 +1,28 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FFF1D7;
+	padding: 0;
+	text-align: center;
+}
+
+h1{
+	padding: 50px;
+	font-family: 'Bungee', cursive;
+	color: #BF2F13;
+	font-size: 4em;
+	margin: 0;
+}
+
+a {
+	font-family: 'Bungee', cursive;
+	text-decoration: none;
+	font-size: 4em;
+	color: #BF2F13;
+}
+
+.box {
+	display: inline-block;
+	margin: 20px;
+	padding: 20px;
+	background-color: #521300;
+}
