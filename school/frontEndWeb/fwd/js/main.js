@@ -372,3 +372,13 @@ function mickeyMouse() {
     context.fill();
     
 }
+
+  // Initialize Firebase
+var config = {
+    apiKey: "AIzaSyCaUM2EvC2pOjgGrSBYiDMk_4xHVLKvkD8",
+    authDomain: "fwd-lab17.firebaseapp.com",
+    databaseURL: "https://fwd-lab17.firebaseio.com",
+    storageBucket: "fwd-lab17.appspot.com",
+    messagingSenderId: "11562240971"
+};
+firebase.initializeApp(config);
