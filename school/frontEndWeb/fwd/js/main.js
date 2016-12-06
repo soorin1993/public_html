@@ -373,6 +373,35 @@ function mickeyMouse() {
     
 }
 
+$("document").ready(function() {
+	$("#lab14").click(getData)
+	$("#lab15").click(getWeatherData)
+	
+});
+
+function getData(){
+	$.getJSON("info.json", successfn)
+}
+
+function successfn(result){
+	$("#data").text(result.name + "," + result.age + "," + result.location);
+}
+
+function errorfn(){
+	console.log("There was an error");
+}
+
+function getWeatherData(){
+	$.getJSON("http://api.openweathermap.org/data/2.5/weather?zip=80302,us&APPID=6c4fcbdb6032c4eaad1879a609cbeb0f&units=imperial", weather)
+
+}
+
+function weather(result) {
+		var main = result.main;
+		var cweather = main.temp;
+		$("#weather").text("The current weather is: " + cweather);
+}
+
   // Initialize Firebase
 var config = {
     apiKey: "AIzaSyCaUM2EvC2pOjgGrSBYiDMk_4xHVLKvkD8",
