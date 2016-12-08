@@ -1,0 +1,39 @@
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;	
+  text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 70px;
+}
+
+#container {
+	display: inline-block;
+	text-align: center;
+}
+#m1 {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	display: block;
+	margin: 10px;
+	float: left;
+	border-radius: 10px;
+}
+
+#m2 {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	color: black;
+	display: block;
+	margin: 10px;
+	float: left;
+	border-radius: 10px;
+	border: solid 1px black;	
+}
