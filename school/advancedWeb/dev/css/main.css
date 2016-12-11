@@ -107,6 +107,124 @@ body {
 	font-size: 15px;
 }
 
+@media screen and (max-width: 650px) {
+	
+	.title {
+		
+		text-align: center;
+		line-height: 12vw;
+		display: block;
+		padding: 5vw 0;
+	    overflow: hidden;
+	    white-space: nowrap;
+	    width: 100%;
+    	background-color: #8E2800;
+
+	}
+	
+	.title h1 {	
+		font-size: 12vw;
+		color: #FFF0A5;
+		font-family: 'Miriam Libre', sans-serif;
+		margin: 0;
+	}
+	
+	.items-containter {
+		display: none;
+	}	
+	
+	.about-container {
+		background-color: #B64926;		
+		display: block;
+	}
+	
+	
+	.about {
+		font-size: 5vw;
+		display: block;
+		width: 80%;	
+		margin: 0 auto;	
+		text-align: center;
+		padding: 2vw 5vw;
+		color: white;
+	}
+
+	.lab-container {
+		background-color: #FFB03B;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.lab {		
+		width: 70%;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;	
+	}
+	
+	.lab img {
+		width: 70vw;
+		height: 70vw;
+	}
+	
+	.lab ul {
+		
+		list-style: none;
+		justify-content: center;		
+		padding: 3vw 0;
+		margin: 0;
+		
+	}
+	
+	.lab-text {
+		font-size: 5vw;
+		padding: 6vw;
+		z-index: 2;
+		background: rgba(142, 40, 0, 0.9);
+		color: white;		
+		position: relative;
+		width: 70vw;
+		height: 70vw;
+		top: -75vw;
+		visibility: hidden;
+		text-align: center;
+		display: flex;
+		align-items: center;
+	}
+	
+	.lab ul li:hover .lab-text{
+		visibility: visible;
+	}
+	
+	.lab ul li {
+		
+		width: 70vw;
+		height: 70vw;
+		display: inline-block;
+		margin: 6vw;
+		vertical-align: top;
+/* 		border: solid #468966 2px; */
+		
+		
+	}
+		
+	footer {
+		
+		height: 100px;
+		display: block;
+		line-height: 100px;
+		padding-left: 50px;
+		background-color: #468966;
+		color: #FFF0A5;
+	}
+	
+	footer p {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
 @media screen and (min-width: 650px) {
 	
 	.title {
@@ -119,15 +237,6 @@ body {
 	    white-space: nowrap;
 	    width: 100%;
     	background-color: #8E2800;
-
-	    /*
-		background: repeating-linear-gradient(
-			45deg,
-			black,
-			black 30px,
-			white 30px,
-			white 60px
-		); */
 
 	}
 	
@@ -208,7 +317,7 @@ body {
 	.lab {
 		
 		width: 80%;
-		display: block;
+		display: flex;
 		margin: 0 auto;	
 		
 	}
