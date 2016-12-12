@@ -42,7 +42,7 @@ function sumbitFirebase() {
 	var location = $('#location').val();
 	var description = $('#description').val();
 	
-	storageRef.push({name: name, email: email, phone: phone, avalanche: avalanche, trigger: trigger, caught: caught});
+	storageRef.push({name: name, email: email, phone: phone, avalanche: avalanche, trigger: trigger, caught: caught, description: description});
 
 }
 
@@ -61,6 +61,8 @@ function createList() {
 		var avalanche = snapshot.val().avalanche;
 		var trigger = snapshot.val().trigger;
 		var caught = snapshot.val().caught;
+		var description = snapshot.val().description;
+
 		 
 		var item = document.createElement('li');
 
@@ -70,6 +72,7 @@ function createList() {
 		var avalancheText = document.createElement('p');
 		var triggerText = document.createElement('p');
 		var caughtText = document.createElement('p');
+		var descriptionText = document.createElement('p')
 		
 		nameText.innerHTML = "Name: " + name;
 		emailText.innerHTML = "Email: " + email;
@@ -77,6 +80,7 @@ function createList() {
 		avalancheText.innerHTML = "Did you see any avalanches?: " + avalanche;
 		triggerText.innerHTML = "Did you trigger any avalanches?: " + trigger;
 		caughtText.innerHTML = "Was anyone caught in an avalanche?: " + caught;
+		descriptionText.innerHTML = "Desription: " + description;
 		
 		item.appendChild(nameText);
 		item.appendChild(emailText);
@@ -84,6 +88,7 @@ function createList() {
 		item.appendChild(avalancheText);
 		item.appendChild(triggerText);
 		item.appendChild(caughtText);
+		item.appendChild(descriptionText);
 		
 		list.appendChild(item);
 
