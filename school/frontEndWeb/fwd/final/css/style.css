@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #d2f6ff;
+}
+
+.title {
+	font-size: 5vw;
+	text-align: center;
+}
+
+h3 {
+	font-size: 4vw;
+}
+
+.menu {
+	text-align: center;
+	font-size: 3vw;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #00629f;
+}
+
+.menu span {
+	margin: 0 3vw;
+}
+
+.main-image {
+	text-align: center;
+}
+
+.main-image img {
+	width: 80%;
+}
+
+#weather-container {
+	text-align: center;
+	font-size: 4vw;
+}
+
+.question {
+	cursor: pointer;
+	font-size: 3vw;
+}
+
+.answer {
+	font-size: 3vw;
+	display: none;
+}
+
+#formelement, #results {
+	font-size: 3vw;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+#rescue-img {
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+
+#rescue-container {
+	width: 80%;
+	font-size: 3vw;
+	margin: 0 auto;
+	display: block;
+}
+
+#rescue-container li {
+	margin: 2vw 0;
+}

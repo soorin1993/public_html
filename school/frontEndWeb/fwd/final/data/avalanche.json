@@ -1,0 +1,38 @@
+[
+  {
+    "state":"Colorado",
+    "fatalities":"34",
+    "activity":"Backcountry Tourer",
+    "month":"January and February"
+  },
+  {
+    "state":"Wyoming",
+    "fatalities":"15",
+    "activity":"Backcountry Tourer",
+    "month":"January"
+  },
+  {
+    "state":"Montana",
+    "fatalities":"18",
+    "activity":"Snowmobiler",
+    "month":"February"
+  },
+    {
+    "state":"Washington",
+    "fatalities":"18",
+    "activity":"Climber",
+    "month":"May"
+  },
+  {
+    "state":"Utah",
+    "fatalities":"15",
+    "activity":"Snowmobiler",
+    "month":"January"
+  },
+  {
+    "state":"Alaska",
+    "fatalities":"16",
+    "activity":"Snowmobiler",
+    "month":"March"
+  }
+]
